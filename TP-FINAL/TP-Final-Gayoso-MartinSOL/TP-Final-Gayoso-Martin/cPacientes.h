@@ -7,7 +7,7 @@ class cPacientes : public cPersonas
 {
 public:
 	
-	cPacientes(string id,string Nom, string app, const cProtesis& prot);
+	cPacientes(string id,string Nom, string app, cProtesis& prot);
 	~cPacientes();
 	
 	friend list<cPacientes> operator+(list<cPacientes> list_p, cPacientes& pac);
@@ -27,7 +27,8 @@ public:
 	void set_Rad_Amput(float R_A);
 	void set_Protesis_Nec(cProtesis* Prot); //USADA
 
-	
+	static int cant_pacientes;
+
 
 	
 protected:

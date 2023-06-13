@@ -1,12 +1,16 @@
 #include "cPacientes.h"
 
-cPacientes::cPacientes(string id,string Nom, string app, const cProtesis& prot) :cPersonas(id,Nom, app),Prot_Necesitada(prot)
+
+int cPacientes::cant_pacientes = 0;
+
+cPacientes::cPacientes(string id,string Nom, string app, cProtesis& prot) :cPersonas(id,Nom, app), Prot_Necesitada(&prot)
 {
 	this->Fecha_Nac = { 0,0,0 };
 	this->Telefono = " ";
 	this->Nombre_Hosp = " ";
 	this->Radio_Amput = 0.0;
-	
+
+	cant_pacientes++;
 }
 list<cPacientes> operator+(list<cPacientes> list_p, cPacientes& pac)
 {
@@ -29,13 +33,10 @@ list<cPacientes> operator+(list<cPacientes> list_p, cPacientes& pac)
 	return list_p;
 }
 
-cPacientes::~cPacientes()
+bool cPacientes::operator==(const cPacientes& pac) const 
 {
-}
 
-bool cPacientes::operator==(const cPacientes& pac) const
-{
-	return (this->ID==pac.ID);
+	return (this->ID == pac.ID && this->Prot_Necesitada == pac.Prot_Necesitada);
 }
 
 tm cPacientes::get_FechaNac()
@@ -88,7 +89,10 @@ void cPacientes::set_Protesis_Nec(cProtesis *Prot)
 	this->Prot_Necesitada = Prot;
 }
 
-
+cPacientes::~cPacientes()
+{
+	cant_pacientes--;
+}
 
 
 

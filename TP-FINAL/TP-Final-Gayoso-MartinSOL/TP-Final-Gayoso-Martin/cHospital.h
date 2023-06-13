@@ -17,7 +17,7 @@ public:
 
 	friend list<cPacientes> operator+(list<cPacientes> list_p, cPacientes& pac);
 	
-
+	list<cPacientes>::iterator buscar_Pac(cProtesis* prot);
 
 protected:
 	list<cMedicos> Lista_Medicos;

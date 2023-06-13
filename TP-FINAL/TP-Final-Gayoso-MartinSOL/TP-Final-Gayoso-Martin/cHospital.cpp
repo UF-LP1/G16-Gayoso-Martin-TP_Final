@@ -22,6 +22,19 @@ void cHospital::Imprimir_Pac()
 
 }
 
+list<cPacientes>::iterator cHospital::buscar_Pac(cProtesis* prot)
+{
+	list<cPacientes>::iterator it = Lista_Pacientes.begin();
+	while (it != Lista_Pacientes.end())
+	{
+		if (it->get_Prot_Nec() == prot)
+			return it;
+		it++;
+	}
+	if (it == Lista_Pacientes.end())
+		return Lista_Pacientes.end(); //te devuelve el ultimo de la lista 
+}
+
 list<cPacientes> operator+(list<cPacientes> list_p, cPacientes& pac)
 {
 	list_p.push_back(pac);

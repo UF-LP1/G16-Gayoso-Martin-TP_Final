@@ -11,7 +11,7 @@ public:
 	~cOrtopedia();
 
 	bool Buscar_Prot( cPacientes _paciente);
-	bool Sol_Prot_F(cProtesis Prot1);
+	bool Sol_Prot_F(cProtesis *Prot1);
 	void Imprimir_Prot();
 	void Imprimir_Prot_Stock();
 

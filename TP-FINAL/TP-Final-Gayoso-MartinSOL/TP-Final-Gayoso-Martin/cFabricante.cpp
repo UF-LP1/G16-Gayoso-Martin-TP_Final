@@ -28,5 +28,13 @@ void cFabricante::set_Nro_Hab(unsigned int nh)
 
 void cFabricante::set_Sol(bool sol)
 {
+	sol= false; {}
+
+	srand(time(NULL));
+	int aux = rand() % (1 - 0);
+	if (aux == 1)
+		sol = true;
+	else
+		sol = false;
 	this->Solicitud = sol;
 }

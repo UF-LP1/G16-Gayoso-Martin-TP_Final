@@ -12,15 +12,33 @@ bool cOrtopedia::Buscar_Prot(cPacientes _paciente)
 {
 	list<cProtesis>::iterator it = Lista_Stock.begin();
 
+	bool var = false;
 	while (it != Lista_Stock.end())
 	{
-		if(_paciente.get_Prot_Nec() == it)
+		if (*_paciente.get_Prot_Nec() == *it)
+		{
+			return true;
+		}
+		else
+		{
+			var = Sol_Prot_F(_paciente.get_Prot_Nec());
+			if (var == true)
+				return true;
 		
-		
-
+		}
+		it++;
 	}
+	if (it == Lista_Stock.end())
+		return false;
 
+}
 
+bool cOrtopedia::Sol_Prot_F(cProtesis* Prot1)
+{
+	if (Prot1->get_Fabricante().get_Sol() == true)
+		return true;//significa que el fabricante me da la proteisis
+	else
+		return false;
 }
 
 void cOrtopedia::Imprimir_Prot()
