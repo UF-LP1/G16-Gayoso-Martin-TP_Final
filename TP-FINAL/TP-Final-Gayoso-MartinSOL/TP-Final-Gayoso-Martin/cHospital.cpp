@@ -21,13 +21,6 @@ void cHospital::Imprimir_Pac()
 	}
 
 }
-//list<cPacientes> cHospital::operator+(const cPacientes& pac)
-//{ 
-//	list<cPacientes> nueva_list = Lista_Pacientes;
-//	nueva_list.push_back(pac);
-//	return nueva_list;
-//
-//}
 
 list<cPacientes> operator+(list<cPacientes> list_p, cPacientes& pac)
 {

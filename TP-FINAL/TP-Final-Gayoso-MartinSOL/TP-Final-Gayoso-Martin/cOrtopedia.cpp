@@ -8,10 +8,18 @@ cOrtopedia::~cOrtopedia()
 {
 }
 
-void cOrtopedia::Buscar_Prot(cANPA c,cPacientes _paciente)
+bool cOrtopedia::Buscar_Prot(cPacientes _paciente)
 {
-	list<cOrtopedia>::iterator it = c.Lista_Ortopedias.begin();
-	list<cProtesis>::iterator it2 = Lista_Stock.begin();
+	list<cProtesis>::iterator it = Lista_Stock.begin();
+
+	while (it != Lista_Stock.end())
+	{
+		if(_paciente.get_Prot_Nec() == it)
+		
+		
+
+	}
+
 
 }
 
@@ -33,20 +41,21 @@ void cOrtopedia::Imprimir_Prot_Stock()
 	}
 }
 
-void cOrtopedia::agregar_Protesis(cProtesis _Protesis)
+void cOrtopedia::agregar_Protesis(cProtesis& _Protesis)
 {
 	Lista_Protesis.push_back(_Protesis);
 }
 
-void cOrtopedia::agregar_Stock(cProtesis _Protesis)
+void cOrtopedia::agregar_Stock(cProtesis& _Protesis)
 {
 	Lista_Stock.push_back(_Protesis);
 }
 
-void cOrtopedia::quitar_Protesis(cProtesis _Protesis)
+void cOrtopedia::quitar_Protesis(cProtesis &_Protesis)
 {
 	Lista_Protesis = Lista_Protesis - _Protesis;
 }
+
 
 list<cProtesis> operator-(list<cProtesis> list_pro, cProtesis& prot)
 {

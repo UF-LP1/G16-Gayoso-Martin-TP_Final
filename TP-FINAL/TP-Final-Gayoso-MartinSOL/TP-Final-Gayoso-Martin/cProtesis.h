@@ -3,11 +3,15 @@
 #include<iostream>
 #include <ctime>
 #include "cFabricante.h"
+#include "cQuirurgicas.h"
+#include "cNoQuirurgicas.h"
 using namespace std;
 
 class cProtesis
 {
 public:
+	friend class cQuirurgicas;
+	friend class cNoQuirurgicas;
 	cProtesis(cFabricante fabricante);
 	~cProtesis();
 
@@ -20,6 +24,8 @@ public:
 	virtual void set_Sup_Inf(bool SF)=0;
 	virtual void set_Der_Izq(bool DI)=0;
 	//imprimir puede ser virtua;
+
+	virtual bool operator==(cProtesis& prots)=0;
 
 	
 

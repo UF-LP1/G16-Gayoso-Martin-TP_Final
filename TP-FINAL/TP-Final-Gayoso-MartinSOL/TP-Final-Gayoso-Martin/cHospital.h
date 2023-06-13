@@ -10,7 +10,7 @@ public:
 	cHospital(string _Nombre, string _Direc);
 	~cHospital();
 	
-	void Agregar_Pac(cPacientes NewPac);
+	void Agregar_Pac(cPacientes NewPac); 
 	//string to_string();
 
 	void Imprimir_Pac();

@@ -11,8 +11,9 @@ public:
 	cANPA();
 	~cANPA();
 	//buscara aca
-
+	bool BuscarPorOrtopedia(cPacientes Pacs);
 	friend class cOrtopedia;
+
 
 protected:
 	list<cOrtopedia> Lista_Ortopedias;

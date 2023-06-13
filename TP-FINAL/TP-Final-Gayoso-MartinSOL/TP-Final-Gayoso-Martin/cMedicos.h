@@ -5,7 +5,7 @@
 #include "cProtesis.h"
 #include "cNoQuirurgicas.h"
 #include "cQuirurgicas.h"
-
+#include <vector>
 using namespace std;
 
 class cMedicos : public cPersonas
@@ -15,7 +15,7 @@ public:
 	~cMedicos();
 
 	void AsignarProtesis(cPacientes & _paciente);
-
+	
 protected:
 	string Matricula;
 

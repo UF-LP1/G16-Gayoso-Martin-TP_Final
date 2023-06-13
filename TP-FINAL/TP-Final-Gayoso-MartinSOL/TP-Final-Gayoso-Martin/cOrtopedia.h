@@ -10,14 +10,15 @@ public:
 	cOrtopedia(string _Nombre, string _Direc);
 	~cOrtopedia();
 
-	void Buscar_Prot(cANPA c, cPacientes _paciente);
+	bool Buscar_Prot( cPacientes _paciente);
 	bool Sol_Prot_F(cProtesis Prot1);
 	void Imprimir_Prot();
 	void Imprimir_Prot_Stock();
 
-	void agregar_Protesis(cProtesis _Protesis);
-	void agregar_Stock(cProtesis _Protesis);
-	void quitar_Protesis(cProtesis _Protesis);
+	void agregar_Protesis(cProtesis&_Protesis);
+	void agregar_Stock(cProtesis &_Protesis);
+	void quitar_Protesis(cProtesis& _Protesis);
+
 
 	friend list<cProtesis> operator-(list<cProtesis> list_pro, cProtesis& prot);//ver bien porque es friend
 
