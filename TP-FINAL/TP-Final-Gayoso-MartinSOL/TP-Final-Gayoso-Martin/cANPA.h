@@ -10,6 +10,7 @@ public:
 
 	cANPA();
 	~cANPA();
+	//buscara aca
 
 	friend class cOrtopedia;
 

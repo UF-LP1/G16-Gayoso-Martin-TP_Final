@@ -3,6 +3,8 @@
 #include "cPersonas.h" 
 #include "cPacientes.h"
 #include "cProtesis.h"
+#include "cNoQuirurgicas.h"
+#include "cQuirurgicas.h"
 
 using namespace std;
 
@@ -12,7 +14,8 @@ public:
 	cMedicos(string id,string Nom, string app);
 	~cMedicos();
 
-	void AsignarProtesis(cPacientes _paciente);
+	void AsignarProtesis(cPacientes & _paciente);
+
 protected:
 	string Matricula;
 

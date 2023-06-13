@@ -31,6 +31,7 @@ protected:
 ostream& operator<<(ostream& out, cPacientes& _Pac)
 {
 	
-	out << _Pac.get_ID() << _Pac.get_nombre() << _Pac.get_apellido() << _Pac.get_Nombre_Hosp() << _Pac.get_Tel() << _Pac.get_Radio_Amput()<<endl;
+	out << _Pac.get_ID() << _Pac.get_nombre() << _Pac.get_apellido() << _Pac.get_Nombre_Hosp() << _Pac.get_Tel() << _Pac.get_Radio_Amput()<<_Pac.
+		endl;
 	return out;
 }

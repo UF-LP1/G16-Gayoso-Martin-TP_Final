@@ -17,8 +17,10 @@ public:
 	bool get_Der_Izq();
 
 	void set_Fecha_Fab(tm FF);
-	void set_Sup_Inf(bool SF);
-	void set_Der_Izq(bool DI);
+	virtual void set_Sup_Inf(bool SF)=0;
+	virtual void set_Der_Izq(bool DI)=0;
+	//imprimir puede ser virtua;
+
 	
 
 protected:

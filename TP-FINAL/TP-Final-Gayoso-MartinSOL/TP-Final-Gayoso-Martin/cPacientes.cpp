@@ -58,7 +58,7 @@ float cPacientes::get_Radio_Amput()
 	return this->Radio_Amput;
 }
 
-cProtesis cPacientes::get_Prot_Nec()
+cProtesis* cPacientes::get_Prot_Nec()
 {
 	return this->Prot_Necesitada;
 }
@@ -82,6 +82,8 @@ void cPacientes::set_Rad_Amput(float R_A)
 {
 	this->Radio_Amput = R_A;
 }
+
+
 
 
 

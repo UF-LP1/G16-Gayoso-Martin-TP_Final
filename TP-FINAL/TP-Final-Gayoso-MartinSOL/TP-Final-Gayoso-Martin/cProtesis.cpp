@@ -1,6 +1,6 @@
 #include "cProtesis.h"
 
-cProtesis::cProtesis(cFabricante fabricante):Fabricante(fabricante)
+cProtesis::cProtesis( cFabricante fabricante):Fabricante(fabricante)
 {
 	this->Fecha_Fabric = { 0,0,0 };
 	this->Sup_Inf = true;
@@ -36,12 +36,6 @@ void cProtesis::set_Fecha_Fab(tm FF)
 	this->Fecha_Fabric = FF;
 }
 
-void cProtesis::set_Sup_Inf(bool SF)
-{
-	this->Sup_Inf = SF;
-}
 
-void cProtesis::set_Der_Izq(bool DI)
-{
-	this->Der_Izq = DI;
-}
+
+

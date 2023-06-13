@@ -1,8 +1,119 @@
-﻿  cANPA.cpp
+﻿  cAlegrias.cpp
+  cANPA.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(13,19): error C2061: error de sintaxis: identificador 'cANPA'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(35,3): error C2039: "endl": no es un miembro de "cPacientes"
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(6): message : vea la declaración de 'cPacientes'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : debido a los siguientes miembros:
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+  cEstablecimiento.cpp
+  cFabricante.cpp
   cHospital.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(35,3): error C2039: "endl": no es un miembro de "cPacientes"
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(6): message : vea la declaración de 'cPacientes'
+  cMedicos.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(17,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(20,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(22,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(28,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(30,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(39,2): error C2059: error de sintaxis: '}'
+  cNoQuirurgicas.cpp
   cOrtopedia.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(35,3): error C2039: "endl": no es un miembro de "cPacientes"
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(6): message : vea la declaración de 'cPacientes'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : debido a los siguientes miembros:
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(36,18): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(36,18): message : debido a los siguientes miembros:
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(36,18): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(36,18): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(41,18): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(41,18): message : debido a los siguientes miembros:
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(41,18): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(41,18): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(46,18): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(46,18): message : debido a los siguientes miembros:
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(46,18): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(46,18): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(48,34): error C2676: '-' binario: 'std::list<cProtesis,std::allocator<cProtesis>>' no define este operador o una conversión a un tipo aceptable para el operador predefinido
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,65): error C2676: '==' binario: 'const _Ty' no define este operador o una conversión a un tipo aceptable para el operador predefinido
+          with
+          [
+              _Ty=cProtesis
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1585): message : al compilar la función del miembro clase plantilla "auto std::list<cProtesis,std::allocator<cProtesis>>::remove(const _Ty &)"
+          with
+          [
+              _Ty=cProtesis
+          ]
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(25): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<cProtesis,std::allocator<cProtesis>>" que se está compilando
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(292,17): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(292,17): message : debido a los siguientes miembros:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(292,17): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(292,17): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1595): message : Vea la referencia a la creación de una instancia de clase plantilla "std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>" que se está compilando
+          with
+          [
+              _Ty=cProtesis,
+              _Alloc=std::allocator<cProtesis>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586): message : Vea la referencia a la creación de una instancia de la función plantilla "auto std::list<cProtesis,std::allocator<cProtesis>>::remove_if<std::list<cProtesis,std::allocator<cProtesis>>::remove::<lambda_a30b751dddf1337e792daf429d6d69e4>>(_Pr1)" que se está compilando
+          with
+          [
+              _Pr1=std::list<cProtesis,std::allocator<cProtesis>>::remove::<lambda_a30b751dddf1337e792daf429d6d69e4>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1597,1): error C2451: una expresión condicional de tipo "void" no es válida
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1597,22): message : Las expresiones de tipo void no se pueden convertir en otros tipos
   cPacientes.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.cpp(3,120): error C2440: 'inicializando': no se puede realizar la conversión de 'const cProtesis' a 'cProtesis *'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.cpp(3,120): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.cpp(4,1): error C2439: 'cPacientes::Prot_Necesitada': no se pudo inicializar el miembro
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(35): message : vea la declaración de 'cPacientes::Prot_Necesitada'
+  cPersonas.cpp
+  cProtesis.cpp
+  cQuirurgicas.cpp
   cRegistro.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(35,3): error C2039: "endl": no es un miembro de "cPacientes"
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(6): message : vea la declaración de 'cPacientes'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(19,7): error C2065: 'cRegistro': identificador no declarado
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(19,2): error C2923: 'std::list': 'cRegistro' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(19): message : vea la declaración de 'cRegistro'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(19,2): error C2976: 'std::list': no hay suficientes argumentos de plantilla
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(754): message : vea la declaración de 'std::list'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : debido a los siguientes miembros:
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(3,12): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(3,12): message : debido a los siguientes miembros:
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(3,12): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(3,12): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
   Generando código...
-MSVCRTD.lib(exe_main.obj) : error LNK2019: símbolo externo main sin resolver al que se hace referencia en la función "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL\TP-Final-Gayoso-MartinSOL\x64\Debug\TP-Final-Gayoso-Martin.exe : fatal error LNK1120: 1 externos sin resolver
