@@ -37,12 +37,17 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente)
 	{
 		vector<string>Materiales;
 		CQ->Agregar_Mat(Materiales);
-
+	
 		aux = rand() % (Materiales.size() - 0);
+		
+		do
+		{
+			aux = rand() % (Materiales.size() - 0);
+			CQ->set_Mat(Materiales[aux]);
+		} while (aux==_paciente.get_Alergias());
+		
 
-		CQ->set_Mat(Materiales[aux]);
-
-		_paciente.set_Protesis_Nec(CQ);
+		_paciente.set_Protesis_Nec(CQ); 
 	}
 	else
 	{

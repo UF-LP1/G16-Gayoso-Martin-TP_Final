@@ -45,8 +45,8 @@ bool cQuirurgicas::operator==(cProtesis& prots)
 
 void cQuirurgicas::Agregar_Mat(vector<string> Mats)
 {
-	Mats.push_back("Acero de grado medico");
-	Mats.push_back("Cobalto y Cromo");
+	Mats.push_back("Acero");
+	Mats.push_back("CobaltoyCromo");
 	Mats.push_back("Titanio");
 	Mats.push_back("Tantalio");
 	Mats.push_back("Ceramica");

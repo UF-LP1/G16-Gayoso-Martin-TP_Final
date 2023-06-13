@@ -77,9 +77,6 @@
     <ClCompile Include="cQuirurgicas.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="cAlegrias.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="cANPA.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>

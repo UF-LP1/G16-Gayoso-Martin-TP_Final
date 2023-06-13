@@ -154,7 +154,6 @@
     <ClInclude Include="cRegistro.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cAlegrias.cpp" />
     <ClCompile Include="cANPA.cpp" />
     <ClCompile Include="cEstablecimiento.cpp" />
     <ClCompile Include="cFabricante.cpp" />

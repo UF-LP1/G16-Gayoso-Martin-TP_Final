@@ -64,6 +64,11 @@ cProtesis* cPacientes::get_Prot_Nec()
 	return this->Prot_Necesitada;
 }
 
+Alegrias cPacientes::get_Alergias()
+{
+	return this->Alergia;
+}
+
 void cPacientes::set_FechaNac(tm _Fecha)
 {
 	this->Fecha_Nac = _Fecha;
@@ -87,6 +92,11 @@ void cPacientes::set_Rad_Amput(float R_A)
 void cPacientes::set_Protesis_Nec(cProtesis *Prot)
 {
 	this->Prot_Necesitada = Prot;
+}
+
+void cPacientes::set_Alergias(Alegrias ale)
+{
+	this->Alergia = ale;
 }
 
 cPacientes::~cPacientes()
