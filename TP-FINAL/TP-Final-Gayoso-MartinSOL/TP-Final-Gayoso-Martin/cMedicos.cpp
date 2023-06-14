@@ -24,7 +24,7 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente)
 		var = false;
 
 	_paciente.get_Prot_Nec()->set_Der_Izq(var);
-
+	aux = 0;
 	aux = rand() % (1 - 0);
 	if (aux == 1)
 		var == true;
@@ -37,10 +37,10 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente)
 	{
 		vector<string>Materiales;
 		CQ->Agregar_Mat(Materiales);
-	
+		aux = 0;
 		aux = rand() % (Materiales.size() - 0);
 		
-		do
+		do   
 		{
 			aux = rand() % (Materiales.size() - 0);
 			CQ->set_Mat(Materiales[aux]);
@@ -54,15 +54,18 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente)
 		cNoQuirurgicas* CNQ = dynamic_cast<cNoQuirurgicas*>(_paciente.get_Prot_Nec());
 		if (CNQ != NULL)
 		{
+
 			CNQ->set_Radio(_paciente.get_Radio_Amput());
+			aux = 0;
+			aux = rand() % (4 - 0);
 
-			float largo = float(rand() % int((135.3 - 29.8) * 100 + 1)) / 100.0f + 29.8f;
+			//float largo
 
-			CNQ->set_Largo(largo);
+			//CNQ->set_Largo(largo);
 
-			float ancho = float(rand() % int((40.0 - 2.4) * 100 + 1)) / 100.0f + 2.4f;
+			//float ancho
 
-			CNQ->set_Ancho(ancho);
+			//CNQ->set_Ancho(ancho);
 
 			_paciente.set_Protesis_Nec(CNQ);
 

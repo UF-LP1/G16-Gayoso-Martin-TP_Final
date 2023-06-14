@@ -152,6 +152,8 @@
     <ClInclude Include="cProtesis.h" />
     <ClInclude Include="cQuirurgicas.h" />
     <ClInclude Include="cRegistro.h" />
+    <ClInclude Include="Funciones.h" />
+    <ClInclude Include="Miembros.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cANPA.cpp" />
@@ -166,6 +168,7 @@
     <ClCompile Include="cProtesis.cpp" />
     <ClCompile Include="cQuirurgicas.cpp" />
     <ClCompile Include="cRegistro.cpp" />
+    <ClCompile Include="Funciones.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

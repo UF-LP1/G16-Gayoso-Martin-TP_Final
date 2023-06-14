@@ -2,6 +2,8 @@
 
 cOrtopedia::cOrtopedia(string _Nombre, string _Direc):cEstablecimiento(_Nombre, _Direc)
 {
+	this->Lista_Protesis.clear();
+	this->Lista_Stock.clear()
 }
 
 cOrtopedia::~cOrtopedia()
@@ -67,7 +69,7 @@ void cOrtopedia::agregar_Protesis(cProtesis& _Protesis)
 void cOrtopedia::agregar_Stock(cProtesis& _Protesis)
 {
 	Lista_Stock.push_back(_Protesis);
-}
+} 
 
 void cOrtopedia::quitar_Protesis(cProtesis &_Protesis)
 {

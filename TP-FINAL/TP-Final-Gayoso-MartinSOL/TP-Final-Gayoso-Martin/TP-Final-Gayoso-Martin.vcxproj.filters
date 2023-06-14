@@ -54,6 +54,12 @@
     <ClInclude Include="cRegistro.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Funciones.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Miembros.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cEstablecimiento.cpp">
@@ -90,6 +96,9 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="cRegistro.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Funciones.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

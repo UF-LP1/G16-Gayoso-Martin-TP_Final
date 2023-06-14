@@ -3,12 +3,14 @@
 
 int cPacientes::cant_pacientes = 0;
 
-cPacientes::cPacientes(string id,string Nom, string app, cProtesis& prot) :cPersonas(id,Nom, app), Prot_Necesitada(&prot)
+cPacientes::cPacientes(string id,string Nom, string app, cProtesis& prot, Alegrias Aler, Miembros Miemb) :cPersonas(id,Nom, app), Prot_Necesitada(&prot)
 {
 	this->Fecha_Nac = { 0,0,0 };
 	this->Telefono = " ";
 	this->Nombre_Hosp = " ";
 	this->Radio_Amput = 0.0;
+	this->Alergia = Aler;
+	this->
 
 	cant_pacientes++;
 }
@@ -69,6 +71,13 @@ Alegrias cPacientes::get_Alergias()
 	return this->Alergia;
 }
 
+Miembros cPacientes::get_Miembro()
+{
+	return this->MiembroProtesis;
+}
+
+
+
 void cPacientes::set_FechaNac(tm _Fecha)
 {
 	this->Fecha_Nac = _Fecha;
@@ -97,6 +106,11 @@ void cPacientes::set_Protesis_Nec(cProtesis *Prot)
 void cPacientes::set_Alergias(Alegrias ale)
 {
 	this->Alergia = ale;
+}
+
+void cPacientes::set_Miembro(Miembros M)
+{
+	this->MiembroProtesis = M;
 }
 
 cPacientes::~cPacientes()

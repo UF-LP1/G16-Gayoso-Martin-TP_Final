@@ -2,6 +2,8 @@
 
 cHospital::cHospital(string _Nombre, string _Direc) :cEstablecimiento(_Nombre, _Direc)
 {
+	this->Lista_Medicos.clear();
+	this->Lista_Pacientes.clear();
 }
 
 cHospital::~cHospital()
@@ -26,7 +28,7 @@ list<cPacientes>::iterator cHospital::buscar_Pac(cProtesis* prot)
 {
 	list<cPacientes>::iterator it = Lista_Pacientes.begin();
 	while (it != Lista_Pacientes.end())
-	{
+	{    
 		if (it->get_Prot_Nec() == prot)
 			return it;
 		it++;

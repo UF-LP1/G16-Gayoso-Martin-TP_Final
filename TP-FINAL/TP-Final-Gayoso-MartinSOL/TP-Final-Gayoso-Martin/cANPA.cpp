@@ -2,6 +2,8 @@
 
 cANPA::cANPA()
 {
+    this->Lista_Ortopedias.clear();
+    this->Lista_Registro.clear();
 }
 
 cANPA::~cANPA()
