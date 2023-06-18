@@ -36,14 +36,21 @@ void cHospital::Agregar_Med(cMedicos NewMed)
 	Lista_Medicos.push_back(NewMed);
 
 }
-string cHospital::getNombreHosp()
-{
-	return this->Nombre;
-}
+
 void cHospital::Imprimir_Pac()
 {
 	list<cPacientes>::iterator it = Lista_Pacientes.begin();
 	for (it; it != Lista_Pacientes.end(); it++)
+	{
+		cout << *it;
+	}
+
+}
+
+void cHospital::Imprimir_Med()
+{
+	list<cMedicos>::iterator it = Lista_Medicos.begin();
+	for (it; it != Lista_Medicos.end(); it++)
 	{
 		cout << *it;
 	}

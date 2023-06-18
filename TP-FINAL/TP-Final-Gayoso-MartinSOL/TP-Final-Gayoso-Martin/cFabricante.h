@@ -1,6 +1,7 @@
 #pragma once
 #include "cEstablecimiento.h"
-class cFabricante: public cEstablecimiento
+#include <sstream>
+class cFabricante : public cEstablecimiento
 {
 public:
 	cFabricante(string _Nombre, string _Direc);
@@ -11,6 +12,8 @@ public:
 
 	void set_Nro_Hab(unsigned int nh);
 	void set_Sol(bool sol);
+	string to_string();
+	void Imprimir();
 
 protected:
 	unsigned int Nro_Habilitacion;
@@ -19,4 +22,3 @@ protected:
 
 
 };
-

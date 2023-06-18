@@ -20,8 +20,12 @@ public:
 	void setProt(cProtesis *prot);
 	void setFechaS(cFechass FS);
 	unsigned int generarFechaEst();
-	void generarFechaE();
+	cFechass generarFechaE();
 	cFechass get_FechaSol();
+	cPacientes get_pac();
+	cMedicos get_med();
+	cHospital get_hosp();
+	
 
 protected:
 	cHospital Hospital;

@@ -38,3 +38,16 @@ void cFabricante::set_Sol(bool sol)
 		sol = false;
 	this->Solicitud = sol;
 }
+
+string cFabricante::to_string()
+{
+	stringstream salida;
+	salida << "Nombre del Fabricante: " << this->Nombre << "Direccion del Fabricante: " << this->Direc << "El Nro del Habilitacion del fabricante es: " << this->Nro_Habilitacion << "El estado de la solicitud es: " << this->Solicitud;
+	return salida.str();
+}
+
+void cFabricante::Imprimir()
+{
+	cout << this->to_string() << endl;
+
+}

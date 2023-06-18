@@ -42,7 +42,7 @@ unsigned int cRegistro::generarFechaEst()
 	return var;
 }
 
-void cRegistro::generarFechaE()
+cFechass cRegistro::generarFechaE()
 {
     this->Fecha_Entrega = this->Fecha_Sol;
 
@@ -62,11 +62,30 @@ void cRegistro::generarFechaE()
     this->Fecha_Entrega.mes = NFechaE->tm_mon + 1;
     this->Fecha_Entrega.anio = NFechaE->tm_year + 1900;
 
+    return this->Fecha_Entrega;
 }
 
 cFechass cRegistro::get_FechaSol()
 {
 	return this->Fecha_Sol;
 }
+
+cPacientes cRegistro::get_pac()
+{
+    return this->Paciente;
+}
+
+cMedicos cRegistro::get_med()
+{
+    return this->Medico;
+}
+
+cHospital cRegistro::get_hosp()
+{
+    return this->Hospital;
+}
+
+
+
 
 
