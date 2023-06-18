@@ -12,7 +12,7 @@ public:
 	void set_Der_Izq(bool DI);//USADAS
 	void set_Mat(string Mat);//USADAS
 	
-	bool operator==(cProtesis&prots) override;
+	//bool operator==(cProtesis&prots) override;
 	void Agregar_Mat(vector<string> Mats); //USADAS
 protected:
 	string Material;

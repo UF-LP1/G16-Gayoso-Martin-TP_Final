@@ -20,7 +20,7 @@ public:
 	void quitar_Protesis(cProtesis& _Protesis);
 
 
-	friend list<cProtesis> operator-(list<cProtesis> list_pro, cProtesis& prot);//ver bien porque es friend
+	 void operator-(cProtesis& prot);
 
 protected:
 	list <cProtesis> Lista_Protesis;

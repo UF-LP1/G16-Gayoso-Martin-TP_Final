@@ -6,17 +6,19 @@
 #include "cNoQuirurgicas.h"
 #include "cQuirurgicas.h"
 #include <vector>
+#include <list>
 using namespace std;
 
 class cMedicos : public cPersonas
 {
 public:
 	cMedicos(string id,string Nom, string app);
-	~cMedicos();
+	~cMedicos();  
 
-	void AsignarProtesis(cPacientes & _paciente);
-	
+	void AsignarProtesis(cPacientes & _paciente, unsigned int k);
+	string get_Matric();
+	cMedicos& operator=(const cMedicos& acopiar);
 protected:
 	string Matricula;
-
+	
 };

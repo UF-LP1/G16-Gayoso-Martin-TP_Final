@@ -14,31 +14,28 @@ cPacientes::cPacientes(string id,string Nom, string app, cProtesis& prot, Alegri
 
 	cant_pacientes++;
 }
-list<cPacientes> operator+(list<cPacientes> list_p, cPacientes& pac)
-{
-	bool Pac_Registrado=false;
 
-	list<cPacientes>::iterator it = list_p.begin();
-	while (it != list_p.end())
-	{
-		if (*it == pac)
-		{
-			Pac_Registrado = true;
-			break;
-		}
-		it++;
-	}  
-	if (Pac_Registrado==false)
-	{
-		list_p.push_back(pac);
-	}
-	return list_p;
-}
 
 bool cPacientes::operator==(const cPacientes& pac) const 
 {
 
 	return (this->ID == pac.ID && this->Prot_Necesitada == pac.Prot_Necesitada);
+}
+
+cPacientes& cPacientes::operator=(const cPacientes& acopiar)
+{
+	if (this != &acopiar)
+	{
+		this->Telefono = acopiar.Telefono;
+		this->ProtesisConseguida = acopiar.ProtesisConseguida;
+		this->Alergia = acopiar.Alergia;
+		this->MiembroProtesis = acopiar.MiembroProtesis;
+		this->Nombre_Hosp = acopiar.Nombre_Hosp;
+		this->Prot_Necesitada = acopiar.Prot_Necesitada;
+		this->MatriculadelMed = acopiar.MatriculadelMed;
+
+
+	}
 }
 
 tm cPacientes::get_FechaNac()
@@ -76,6 +73,11 @@ Miembros cPacientes::get_Miembro()
 	return this->MiembroProtesis;
 }
 
+string cPacientes::get_Mat()
+{
+	return this->MatriculadelMed;
+}
+
 
 
 void cPacientes::set_FechaNac(tm _Fecha)
@@ -111,6 +113,11 @@ void cPacientes::set_Alergias(Alegrias ale)
 void cPacientes::set_Miembro(Miembros M)
 {
 	this->MiembroProtesis = M;
+}
+
+void cPacientes::set_MatriculaMed(string Mat)
+{
+	this->MatriculadelMed = Mat;
 }
 
 cPacientes::~cPacientes()

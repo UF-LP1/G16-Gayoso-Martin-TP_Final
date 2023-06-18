@@ -10,13 +10,14 @@ public:
 
 	cANPA();
 	~cANPA();
-	//buscara aca
+	
 	bool BuscarPorOrtopedia(cPacientes Pacs);
 	friend class cOrtopedia;
-
+	void Guardar_en_Registro();
+	
 
 protected:
 	list<cOrtopedia> Lista_Ortopedias;
 	list<cRegistro>Lista_Registro;
-
+	list<cHospital>Lista_Hosp_Registrados;
 };

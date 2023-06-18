@@ -11,13 +11,18 @@ public:
 	~cHospital();
 	
 	void Agregar_Pac(cPacientes NewPac); 
+	void Agregar_Med(cMedicos NewMed);
+	string getNombreHosp();
 	//string to_string();
 
 	void Imprimir_Pac();
 
-	friend list<cPacientes> operator+(list<cPacientes> list_p, cPacientes& pac);
-	
-	list<cPacientes>::iterator buscar_Pac(cProtesis* prot);
+	void operator+(cPacientes& pac);
+	void operator+(cMedicos& Med);
+	cMedicos BuscarPorMat();
+	list<cPacientes>::iterator buscar_Hosp(cHospital hosp); 
+	cHospital& operator=(const cHospital &acopiar);
+	//bool operator==(cHospital& hosp);
 
 protected:
 	list<cMedicos> Lista_Medicos;

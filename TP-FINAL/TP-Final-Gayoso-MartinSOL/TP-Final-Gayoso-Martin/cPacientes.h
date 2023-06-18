@@ -4,6 +4,8 @@
 #include "cPersonas.h"
 #include "cAlegrias.h"
 #include "Miembros.h"
+
+class cMedicos;
 class cPacientes : public cPersonas
 {
 public:
@@ -11,9 +13,9 @@ public:
 	cPacientes(string id,string Nom, string app, cProtesis& prot, Alegrias Aler, Miembros Miemb);
 	~cPacientes();
 	
-	friend list<cPacientes> operator+(list<cPacientes> list_p, cPacientes& pac);
+	
 	bool operator==(const cPacientes& pac) const;
-
+	cPacientes &operator=(const cPacientes& acopiar);
 
 
 	tm get_FechaNac();
@@ -23,6 +25,7 @@ public:
 	cProtesis* get_Prot_Nec();//USADA
 	Alegrias get_Alergias();
 	Miembros get_Miembro();
+	string get_Mat();
 	
 
 	void set_FechaNac(tm _Fecha);
@@ -32,19 +35,21 @@ public:
 	void set_Protesis_Nec(cProtesis* Prot); //USADA
 	void set_Alergias(Alegrias ale);
 	void set_Miembro(Miembros M);
-
+	void set_MatriculaMed(string Mat);
+	
+	
 
 	static int cant_pacientes;
-
-
 	
 protected:
-	tm Fecha_Nac;
+	const tm Fecha_Nac;
 	string Telefono;
 	string Nombre_Hosp;
-	float Radio_Amput;
+	const float Radio_Amput;
 	cProtesis* Prot_Necesitada; 
 	bool ProtesisConseguida; //true consiguio la protesis flase no la consiguio
 	Alegrias Alergia;
 	Miembros MiembroProtesis;
+	string MatriculadelMed;
+	
 }; 

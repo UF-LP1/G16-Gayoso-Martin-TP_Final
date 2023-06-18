@@ -30,3 +30,10 @@ bool cANPA::BuscarPorOrtopedia(cPacientes Pacs)
        if(var==false)
          return false;
 }
+
+void cANPA::Guardar_en_Registro()
+{
+    list<cHospital>::iterator ith = Lista_Hosp_Registrados.begin();
+    list<cRegistro>::iterator itr = Lista_Registro.begin();
+
+}

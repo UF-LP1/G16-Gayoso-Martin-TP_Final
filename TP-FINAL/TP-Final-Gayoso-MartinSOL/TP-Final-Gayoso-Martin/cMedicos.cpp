@@ -4,13 +4,14 @@
 cMedicos::cMedicos(string id,string Nom, string app):cPersonas(id,Nom,app)
 {
 	this->Matricula = " ";
+	
 }
 
 cMedicos::~cMedicos()
 {
 }
 
-void cMedicos::AsignarProtesis(cPacientes& _paciente)
+void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 {
 	//srand((unsigned) time(NULL));
 	
@@ -59,18 +60,28 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente)
 			aux = 0;
 			aux = rand() % (4 - 0);
 
-			//float largo
-
-			//CNQ->set_Largo(largo);
-
-			//float ancho
-
-			//CNQ->set_Ancho(ancho);
 
 			_paciente.set_Protesis_Nec(CNQ);
-
+		
+			_paciente.set_MatriculaMed(this->Matricula);
 		}
 	}
 	
+
+}
+
+string cMedicos::get_Matric()
+{
+	return this->Matricula;
+}
+
+cMedicos& cMedicos::operator=(const cMedicos& acopiar)
+{
+	if (this != &acopiar)
+	{
+		this->Matricula = acopiar.Matricula;
+	
+
+	}
 
 }

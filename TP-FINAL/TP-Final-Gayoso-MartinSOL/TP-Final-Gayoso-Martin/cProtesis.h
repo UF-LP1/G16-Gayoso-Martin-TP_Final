@@ -25,7 +25,7 @@ public:
 	virtual void set_Der_Izq(bool DI)=0;
 	//imprimir puede ser virtua;
 
-	virtual bool operator==(cProtesis& prots)=0;
+	//virtual bool operator==(cProtesis& prots)=0;
 
 	
 
