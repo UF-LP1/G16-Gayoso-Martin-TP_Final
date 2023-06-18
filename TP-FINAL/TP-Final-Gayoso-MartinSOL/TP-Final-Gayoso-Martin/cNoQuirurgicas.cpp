@@ -1,6 +1,6 @@
 #include "cNoQuirurgicas.h"
 
-cNoQuirurgicas::cNoQuirurgicas(const cFabricante& fabricante) :cProtesis(fabricante)
+cNoQuirurgicas::cNoQuirurgicas(cFabricante fabricante, cFechass fecha, cFechass fecha_s) : cProtesis(fabricante, fecha, fecha_s)
 {
 	this->Radio = 0.0;
 	this->Largo = 0.0;
@@ -54,3 +54,11 @@ void cNoQuirurgicas::set_Ancho(float Anch)
 //	else
 //		return false;
 //}
+
+ostream& operator<<(ostream& out, cNoQuirurgicas& NQ)
+{
+	out << NQ.Ancho << NQ.Largo << NQ.Radio;
+	cProtesis* aux = &NQ;
+	out << *aux;
+	return out;
+}

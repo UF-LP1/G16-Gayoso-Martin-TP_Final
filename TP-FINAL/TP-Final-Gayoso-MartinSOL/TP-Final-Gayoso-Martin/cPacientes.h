@@ -4,13 +4,14 @@
 #include "cPersonas.h"
 #include "cAlegrias.h"
 #include "Miembros.h"
+#include "cFechass.h"
 
 class cMedicos;
 class cPacientes : public cPersonas
 {
 public:
 	
-	cPacientes(string id,string Nom, string app, cProtesis& prot, Alegrias Aler, Miembros Miemb);
+	cPacientes(string id,string Nom, string app, cProtesis& prot, Alegrias Aler, Miembros Miemb, cFechass fecha);
 	~cPacientes();
 	
 	
@@ -18,7 +19,7 @@ public:
 	cPacientes &operator=(const cPacientes& acopiar);
 
 
-	tm get_FechaNac();
+	cFechass get_FechaNac();
 	string get_Tel();
 	string get_Nombre_Hosp();
 	float  get_Radio_Amput();
@@ -28,7 +29,6 @@ public:
 	string get_Mat();
 	
 
-	void set_FechaNac(tm _Fecha);
 	void set_Tel(string _Tel);
 	void set_Nombre_Hosp(string _N_H);
 	void set_Rad_Amput(float R_A);
@@ -42,10 +42,10 @@ public:
 	static int cant_pacientes;
 	
 protected:
-	const tm Fecha_Nac;
+	const cFechass Fecha_Nac;
 	string Telefono;
 	string Nombre_Hosp;
-	const float Radio_Amput;
+	float Radio_Amput;
 	cProtesis* Prot_Necesitada; 
 	bool ProtesisConseguida; //true consiguio la protesis flase no la consiguio
 	Alegrias Alergia;

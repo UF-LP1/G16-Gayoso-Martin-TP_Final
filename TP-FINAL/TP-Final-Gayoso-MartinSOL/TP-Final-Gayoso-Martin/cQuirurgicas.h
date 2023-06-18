@@ -5,7 +5,7 @@ class cQuirurgicas: public cProtesis
 {
 	
 public:	
-	cQuirurgicas(const cFabricante& fabricante);
+	cQuirurgicas(cFabricante fabricante, cFechass fecha, cFechass fecha_s);
 	~cQuirurgicas();
 
 	void set_Sup_Inf(bool SF); //USADAS
@@ -14,6 +14,8 @@ public:
 	
 	//bool operator==(cProtesis&prots) override;
 	void Agregar_Mat(vector<string> Mats); //USADAS
+	friend ostream& operator<<(ostream& out, cQuirurgicas& CQ);
+
 protected:
 	string Material;
 	

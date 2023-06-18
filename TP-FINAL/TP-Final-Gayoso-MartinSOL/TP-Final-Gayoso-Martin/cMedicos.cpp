@@ -33,6 +33,14 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 		var == false;
 	_paciente.get_Prot_Nec()->set_Sup_Inf(var);
 
+
+	time_t tiempoActual = time(0);
+	struct tm* tiempo = localtime(&tiempoActual);
+	cFechass FechaSol(tiempo->tm_mday, tiempo->tm_mon + 1, tiempo->tm_year + 1900);
+
+	_paciente.get_Prot_Nec()->set_Fecha_Sol(FechaSol);//le tenemos que pasar una variable fecha
+
+
 	cQuirurgicas* CQ = dynamic_cast<cQuirurgicas*>(_paciente.get_Prot_Nec());
 	if (CQ != NULL)
 	{
@@ -83,5 +91,5 @@ cMedicos& cMedicos::operator=(const cMedicos& acopiar)
 	
 
 	}
-
+	return *this;
 }

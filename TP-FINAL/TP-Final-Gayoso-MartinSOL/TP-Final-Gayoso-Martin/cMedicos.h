@@ -7,6 +7,7 @@
 #include "cQuirurgicas.h"
 #include <vector>
 #include <list>
+#include <ctime>
 using namespace std;
 
 class cMedicos : public cPersonas

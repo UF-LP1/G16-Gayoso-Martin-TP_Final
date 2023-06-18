@@ -60,6 +60,9 @@
     <ClInclude Include="Miembros.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="cFechass.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cEstablecimiento.cpp">
@@ -99,6 +102,9 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="Funciones.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="cFechass.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

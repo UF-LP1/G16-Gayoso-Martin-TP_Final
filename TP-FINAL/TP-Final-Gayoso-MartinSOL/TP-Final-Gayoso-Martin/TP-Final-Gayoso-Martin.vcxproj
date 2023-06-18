@@ -143,6 +143,7 @@
     <ClInclude Include="cANPA.h" />
     <ClInclude Include="cEstablecimiento.h" />
     <ClInclude Include="cFabricante.h" />
+    <ClInclude Include="cFechass.h" />
     <ClInclude Include="cHospital.h" />
     <ClInclude Include="cMedicos.h" />
     <ClInclude Include="cNoQuirurgicas.h" />
@@ -159,6 +160,7 @@
     <ClCompile Include="cANPA.cpp" />
     <ClCompile Include="cEstablecimiento.cpp" />
     <ClCompile Include="cFabricante.cpp" />
+    <ClCompile Include="cFechass.cpp" />
     <ClCompile Include="cHospital.cpp" />
     <ClCompile Include="cMedicos.cpp" />
     <ClCompile Include="cNoQuirurgicas.cpp" />

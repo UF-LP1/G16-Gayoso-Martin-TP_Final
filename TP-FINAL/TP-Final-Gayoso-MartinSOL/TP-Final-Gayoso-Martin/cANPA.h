@@ -14,7 +14,7 @@ public:
 	bool BuscarPorOrtopedia(cPacientes Pacs);
 	friend class cOrtopedia;
 	void Guardar_en_Registro();
-	
+	cPacientes buscar_Hosp(cHospital hosp);
 
 protected:
 	list<cOrtopedia> Lista_Ortopedias;

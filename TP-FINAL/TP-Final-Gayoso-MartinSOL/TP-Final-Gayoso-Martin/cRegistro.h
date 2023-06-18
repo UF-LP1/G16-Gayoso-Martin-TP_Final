@@ -11,22 +11,25 @@ using namespace std;
 class cRegistro
 {
 public:
-	cRegistro(cHospital hosp, cMedicos medic, cProtesis *prot, cPacientes Paciente);
+	cRegistro(cHospital hosp, cMedicos medic, cProtesis *prot, cPacientes Paciente, cFechass fecha_e, cFechass fecha_s);
 	~cRegistro();
 
 	void setHosp(cHospital hosp);
 	void setMedico(cMedicos med);
 	void setPac(cPacientes pacs);
 	void setProt(cProtesis *prot);
-
+	void setFechaS(cFechass FS);
+	unsigned int generarFechaEst();
+	void generarFechaE();
+	cFechass get_FechaSol();
 
 protected:
 	cHospital Hospital;
 	cMedicos Medico;
 	cProtesis *P_Ort;
 	cPacientes Paciente;
-	tm Fecha_Sol;
-	tm Fecha_EstE;
-	tm Fecha_Entrega;
+	cFechass Fecha_Sol;
+	unsigned int Fecha_EstE;
+	cFechass Fecha_Entrega;
 
 };

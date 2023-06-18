@@ -1,8 +1,7 @@
 	#include "cProtesis.h"
 
-	cProtesis::cProtesis( cFabricante fabricante):Fabricante(fabricante)
+	cProtesis::cProtesis( cFabricante fabricante, cFechass fecha, cFechass fecha_s):Fabricante(fabricante), Fecha_Fabric(fecha), Fecha_solicitada(fecha_s)
 	{
-		this->Fecha_Fabric = { 0,0,0 };
 		this->Sup_Inf = true;
 		this->Der_Izq = true;
 	}
@@ -11,7 +10,7 @@
 	{
 	}
 
-	tm cProtesis::get_Fecha_Fab()
+	cFechass cProtesis::get_Fecha_Fab()
 	{
 		return this->Fecha_Fabric;
 	}
@@ -31,9 +30,19 @@
 		return this->Der_Izq;
 	}
 
-	void cProtesis::set_Fecha_Fab(tm FF)
+	cFechass cProtesis::get_FechaSol()
+	{
+		return this->Fecha_solicitada;
+	}
+
+	void cProtesis::set_Fecha_Fab(cFechass FF)
 	{
 		this->Fecha_Fabric = FF;
+	}
+
+	void cProtesis::set_Fecha_Sol(cFechass FS)
+	{
+		this->Fecha_solicitada = FS;
 	}
 
 

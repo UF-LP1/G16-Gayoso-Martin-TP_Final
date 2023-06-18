@@ -3,14 +3,13 @@
 
 int cPacientes::cant_pacientes = 0;
 
-cPacientes::cPacientes(string id,string Nom, string app, cProtesis& prot, Alegrias Aler, Miembros Miemb) :cPersonas(id,Nom, app), Prot_Necesitada(&prot)
+cPacientes::cPacientes(string id,string Nom, string app, cProtesis& prot, Alegrias Aler, Miembros Miemb, cFechass fecha):cPersonas(id,Nom, app), Prot_Necesitada(&prot), Fecha_Nac(fecha)
 {
-	this->Fecha_Nac = { 0,0,0 };
+	this->Radio_Amput = 0.0;
 	this->Telefono = " ";
 	this->Nombre_Hosp = " ";
-	this->Radio_Amput = 0.0;
 	this->Alergia = Aler;
-	this->
+	
 
 	cant_pacientes++;
 }
@@ -33,12 +32,14 @@ cPacientes& cPacientes::operator=(const cPacientes& acopiar)
 		this->Nombre_Hosp = acopiar.Nombre_Hosp;
 		this->Prot_Necesitada = acopiar.Prot_Necesitada;
 		this->MatriculadelMed = acopiar.MatriculadelMed;
-
+		this->Radio_Amput = acopiar.Radio_Amput;
 
 	}
+
+	return *this;
 }
 
-tm cPacientes::get_FechaNac()
+cFechass cPacientes::get_FechaNac()
 {
 	return this->Fecha_Nac;
 }
@@ -76,13 +77,6 @@ Miembros cPacientes::get_Miembro()
 string cPacientes::get_Mat()
 {
 	return this->MatriculadelMed;
-}
-
-
-
-void cPacientes::set_FechaNac(tm _Fecha)
-{
-	this->Fecha_Nac = _Fecha;
 }
 
 void cPacientes::set_Tel(string _Tel)

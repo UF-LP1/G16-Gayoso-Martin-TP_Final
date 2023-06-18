@@ -77,18 +77,7 @@ cMedicos cHospital::BuscarPorMat()
 //no hacemos excepcion aca porque si o si tiene que haber un medico si no nadie podria haverle seteado una matricula al paciente
 }
 
-list<cPacientes>::iterator cHospital::buscar_Hosp(cHospital hosp)
-{
-	list<cPacientes>::iterator it = Lista_Pacientes.begin();
-	while (it != Lista_Pacientes.end())
-	{    
-		if (it->get_Nombre_Hosp() == hosp.getNombreHosp())
-			return it;
-		it++;
-	}
-	if (it == Lista_Pacientes.end())
-		return Lista_Pacientes.end(); //te devuelve el ultimo de la lista hacer excepcion
-}
+
 
 cHospital& cHospital::operator=(const cHospital& acopiar)
 {
@@ -99,6 +88,7 @@ cHospital& cHospital::operator=(const cHospital& acopiar)
 
 	}
 	
+	return *this;
 }
 
 //bool cHospital::operator==(cHospital& hosp)
