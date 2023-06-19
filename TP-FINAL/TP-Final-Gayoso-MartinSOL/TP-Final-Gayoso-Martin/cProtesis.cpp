@@ -1,6 +1,6 @@
 	#include "cProtesis.h"
 
-	cProtesis::cProtesis( cFabricante fabricante, cFechass fecha, cFechass fecha_s):Fabricante(fabricante), Fecha_Fabric(fecha), Fecha_solicitada(fecha_s)
+	cProtesis::cProtesis( cFabricante &fabricante, cFechass fecha={1,1,2001}, cFechass fecha_s={1,1,2001}) :Fabricante(fabricante), Fecha_Fabric(fecha), Fecha_solicitada(fecha_s)
 	{
 		this->Sup_Inf = true;
 		this->Der_Izq = true;

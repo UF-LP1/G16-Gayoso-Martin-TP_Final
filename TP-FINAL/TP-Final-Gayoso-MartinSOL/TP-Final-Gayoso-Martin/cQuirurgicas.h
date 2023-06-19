@@ -5,7 +5,7 @@ class cQuirurgicas: public cProtesis
 {
 	
 public:	
-	cQuirurgicas(cFabricante fabricante, cFechass fecha, cFechass fecha_s);
+	cQuirurgicas(cFabricante& fabricante, cFechass fecha, cFechass fecha_s);
 	~cQuirurgicas();
 
 	void set_Sup_Inf(bool SF); //USADAS

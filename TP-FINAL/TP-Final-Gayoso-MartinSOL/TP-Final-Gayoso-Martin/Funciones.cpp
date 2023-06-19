@@ -41,3 +41,80 @@ void Switch(cPacientes pac, unsigned int k, cNoQuirurgicas CQN)
 
 	}
 }
+
+Alergias switch1(unsigned int opcion)
+{
+	Alergias Al; 
+	while (opcion < 1 || opcion>5)
+	{
+		switch (opcion)
+		{
+			 
+		case 1:
+			Al = Acero;
+			break;
+		case 2:
+			Al = CobaltoyCromo;
+			break;
+		case 3:
+			Al = Titanio;
+			break;
+		case 4:
+			Al = Tantalio;
+			break;
+		case 5:
+			Al = Ceramica;
+			break;
+		}
+
+
+	}
+	return Al;
+}
+
+Miembros switch2(unsigned int op)
+{
+	Miembros M;
+	while (op < 1 || op>4)
+	{
+		switch (op)
+		{
+
+		case 1:
+			M=Brazo;
+			break;
+		case 2:
+			M=Pierna;
+			break;
+		case 3:
+			M=Mano;
+			break;
+		case 4:
+			M=Pie;
+			break;
+		}
+
+
+	}
+	return M;
+}
+
+cProtesis* ProtesisNecesitada(unsigned int p)
+{
+	cProtesis* protesis= nullptr;
+	while (p < 1 || p>2)
+	{
+		switch (p)
+		{
+
+		case 1:
+			cQuirurgicas * cQ = dynamic_cast<cQuirurgicas*>(protesis);
+			return cQ;
+
+		case 2:
+			cNoQuirurgicas * cNQ = dynamic_cast<cNoQuirurgicas*>(protesis);
+			return cNQ;
+		}
+	}
+	
+}

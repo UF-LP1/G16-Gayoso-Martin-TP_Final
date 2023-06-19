@@ -3,7 +3,7 @@
 class cNoQuirurgicas: public cProtesis
 {
 public:
-	cNoQuirurgicas(cFabricante fabricante, cFechass fecha, cFechass fecha_s);
+	cNoQuirurgicas(cFabricante& fabricante, cFechass fecha, cFechass fecha_s);
 	~cNoQuirurgicas();
 	void set_Sup_Inf(bool SF);//USADO
 	void set_Der_Izq(bool DI);//USADO

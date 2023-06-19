@@ -1,6 +1,6 @@
 #include "cNoQuirurgicas.h"
 
-cNoQuirurgicas::cNoQuirurgicas(cFabricante fabricante, cFechass fecha, cFechass fecha_s) : cProtesis(fabricante, fecha, fecha_s)
+cNoQuirurgicas::cNoQuirurgicas(cFabricante& fabricante, cFechass fecha, cFechass fecha_s) : cProtesis(fabricante, fecha, fecha_s)
 {
 	this->Radio = 0.0;
 	this->Largo = 0.0;

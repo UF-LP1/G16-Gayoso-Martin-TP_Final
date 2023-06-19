@@ -40,7 +40,30 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 
 	_paciente.get_Prot_Nec()->set_Fecha_Sol(FechaSol);//le tenemos que pasar una variable fecha
 
+	_paciente.get_Prot_Nec()->set_Fecha_Fab(FechaSol);
+	
+	//this->Fecha_Entrega = this->Fecha_Sol;
+	unsigned int var = 0;
 
+	var = rand() % (15 - 10);
+	tm FechaE = {};
+	FechaE.tm_mday = _paciente.get_Prot_Nec()->get_Fecha_Fab().get_dia();
+	FechaE.tm_mon = _paciente.get_Prot_Nec()->get_Fecha_Fab().get_mes() - 1;
+	FechaE.tm_year = _paciente.get_Prot_Nec()->get_Fecha_Fab().get_anio() - 1900;
+
+	time_t tiempoE = mktime(&FechaE); //paso la fecha de entrega a segundos
+
+	time_t diasEs =  var * 24 * 60 * 60;// paso los dias estimados a segundos
+
+	tiempoE += diasEs;
+
+	tm* NFechaE = localtime(&tiempoE);
+	_paciente.get_Prot_Nec()->get_Fecha_Fab().set_dia(NFechaE->tm_mday);
+	_paciente.get_Prot_Nec()->get_Fecha_Fab().set_mes(NFechaE->tm_mon+1);
+	_paciente.get_Prot_Nec()->get_Fecha_Fab().set_anio(NFechaE->tm_year+1900);
+
+
+	
 	cQuirurgicas* CQ = dynamic_cast<cQuirurgicas*>(_paciente.get_Prot_Nec());
 	if (CQ != NULL)
 	{

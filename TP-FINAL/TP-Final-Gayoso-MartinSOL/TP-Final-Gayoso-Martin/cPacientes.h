@@ -28,7 +28,7 @@ public:
 	Miembros get_Miembro();
 	string get_Mat();
 	
-	void CrearPac(string T,string NH,float RA,Alergias a,Miembros m);
+	void CrearPac(string T,string NH,float RA);
 
 	void set_Tel(string _Tel);//USADA
 	void set_Nombre_Hosp(string _N_H);//USADA
@@ -56,3 +56,4 @@ protected:
 	string MatriculadelMed;
 	
 }; 
+

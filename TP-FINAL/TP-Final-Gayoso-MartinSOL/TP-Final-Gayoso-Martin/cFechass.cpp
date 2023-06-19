@@ -28,6 +28,21 @@ int cFechass::get_anio()
 	return this->anio;
 }
 
+void cFechass::set_dia(int d)
+{
+	this->dia = d;
+}
+
+void cFechass::set_mes(int m)
+{
+	this->mes = m;
+}
+
+void cFechass::set_anio(int a)
+{
+	this->anio = a;
+}
+
 string cFechass::to_stringF()
 {
 	stringstream salida;

@@ -63,7 +63,7 @@ float cPacientes::get_Radio_Amput()
 
 cProtesis* cPacientes::get_Prot_Nec()
 {
-	return this->Prot_Necesitada;
+	return Prot_Necesitada;
 }
 
 Alergias cPacientes::get_Alergias()
@@ -81,14 +81,14 @@ string cPacientes::get_Mat()
 	return this->MatriculadelMed;
 }
 
-void cPacientes::CrearPac(string T, string NH, float RA, Alergias a, Miembros m)
+void cPacientes::CrearPac(string T, string NH, float RA)
 {
 	this->set_Tel(T);
 	this->set_Nombre_Hosp(NH);
 	this->set_Rad_Amput(RA);
 	
-	this->set_Alergias(a);
-	this->set_Miembro(m);
+	//this->set_Alergias(a);
+	//this->set_Miembro(m);
 	
 }
 
@@ -121,6 +121,8 @@ void cPacientes::set_Miembro(Miembros M)
 {
 	this->MiembroProtesis = M;
 }
+
+
 
 void cPacientes::set_MatriculaMed(string Mat)
 {

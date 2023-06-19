@@ -2,7 +2,7 @@
 
 cPersonas::cPersonas(string id,string Nom, string app):ID(id),nombre(Nom),apellido(app)
 {
-} 
+}
 
 cPersonas::~cPersonas()
 {

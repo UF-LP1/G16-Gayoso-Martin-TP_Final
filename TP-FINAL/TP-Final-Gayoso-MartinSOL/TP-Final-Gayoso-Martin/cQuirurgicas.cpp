@@ -1,6 +1,6 @@
 #include "cQuirurgicas.h"
 
-cQuirurgicas::cQuirurgicas(cFabricante fabricante, cFechass fecha, cFechass fecha_s) : cProtesis(fabricante, fecha, fecha_s)
+cQuirurgicas::cQuirurgicas(cFabricante& fabricante, cFechass fecha, cFechass fecha_s) : cProtesis(fabricante, fecha, fecha_s)
 {
 	this->Material = " ";
 }

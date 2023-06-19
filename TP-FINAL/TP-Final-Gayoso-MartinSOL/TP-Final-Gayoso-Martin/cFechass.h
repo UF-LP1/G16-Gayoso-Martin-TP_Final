@@ -17,6 +17,9 @@ public:
 	int get_dia();
 	int get_mes();
 	int get_anio();
+	void set_dia(int d);
+	void set_mes(int m);
+	void set_anio(int a);
 	friend std::ostream& operator<<(std::ostream& out, cFechass& fecha);
 	friend class cRegistro;
 	friend class cPacientes;

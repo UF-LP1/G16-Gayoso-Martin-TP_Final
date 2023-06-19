@@ -13,7 +13,7 @@ class cProtesis
 public:
 	friend class cQuirurgicas;
 	friend class cNoQuirurgicas;
-	cProtesis(cFabricante fabricante, cFechass fecha, cFechass fecha_s);
+	cProtesis(cFabricante &fabricante, cFechass fecha={1,1,2001}, cFechass fecha_s={1,1,2001});
 	~cProtesis();
 
 	cFechass get_Fecha_Fab();
