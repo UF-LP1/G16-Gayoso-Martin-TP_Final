@@ -44,7 +44,7 @@ void cANPA::Guardar_en_Registro()
             itr->setMedico(ith->BuscarPorMat());
             itr->setPac(this->buscar_Hosp(*ith));
             itr->setProt(this->buscar_Hosp(*ith).get_Prot_Nec());//como la funcion buscar_hosp te devuelve un paciente, desde el paciente que te devuelve pedis la protesis
-            //Falta tema fechas!!!!
+           
             itr->setFechaS(this->buscar_Hosp(*ith).get_Prot_Nec()->get_FechaSol());
             itr->generarFechaE();
         }
@@ -62,6 +62,21 @@ cPacientes cANPA::buscar_Hosp(cHospital hosp)
     }
     //if (it == Lista_Pacientes.end())
         //return Lista_Pacientes.end(); //te devuelve el ultimo de la lista hacer excepcion
+}
+
+void cANPA::Agregar_Ortopedias(cOrtopedia& c)
+{
+    Lista_Ortopedias.push_back(c);
+}
+
+void cANPA::Agregar_Registro(cRegistro& r)
+{
+    Lista_Registro.push_back(r);
+}
+
+void cANPA::Agregar_Hosp(cHospital& h)
+{
+    Lista_Hosp_Registrados.push_back(h);
 }
 
 void cANPA::Imprimir_Ortopedias()
@@ -96,6 +111,7 @@ void cANPA::Imprimir_Hospitales()
 
 ostream& operator<<(ostream& out, cRegistro& reg)
 {
+    //out<<reg.to_stringR();
     out << reg.get_FechaSol().get_dia() << reg.get_FechaSol().get_mes() << reg.get_FechaSol().get_anio() << reg.generarFechaE().get_dia()
         << reg.generarFechaE().get_mes() << reg.generarFechaE().get_mes() << reg.generarFechaE().get_anio();
     cPacientes aux = reg.get_pac();

@@ -2,7 +2,7 @@
 #include<list>
 #include "cProtesis.h"
 #include "cPersonas.h"
-#include "cAlegrias.h"
+#include "cAlergias.h" 
 #include "Miembros.h"
 #include "cFechass.h"
 
@@ -11,7 +11,7 @@ class cPacientes : public cPersonas
 {
 public:
 	
-	cPacientes(string id,string Nom, string app, cProtesis& prot, Alegrias Aler, Miembros Miemb, cFechass fecha);
+	cPacientes(string id,string Nom, string app, cProtesis& prot, Alergias Aler, Miembros Miemb, cFechass fecha);
 	~cPacientes();
 	
 	
@@ -24,20 +24,23 @@ public:
 	string get_Nombre_Hosp();
 	float  get_Radio_Amput();
 	cProtesis* get_Prot_Nec();//USADA
-	Alegrias get_Alergias();
+	Alergias get_Alergias();
 	Miembros get_Miembro();
 	string get_Mat();
 	
+	void CrearPac(string T,string NH,float RA,Alergias a,Miembros m);
 
-	void set_Tel(string _Tel);
-	void set_Nombre_Hosp(string _N_H);
-	void set_Rad_Amput(float R_A);
+	void set_Tel(string _Tel);//USADA
+	void set_Nombre_Hosp(string _N_H);//USADA
+	void set_Rad_Amput(float R_A);//USADA
 	void set_Protesis_Nec(cProtesis* Prot); //USADA
-	void set_Alergias(Alegrias ale);
-	void set_Miembro(Miembros M);
-	void set_MatriculaMed(string Mat);
+	void set_Alergias(Alergias ale);//USADA
+	void set_Miembro(Miembros M);//USADA
+	void set_MatriculaMed(string Mat);//Usada
 	
 	
+	string to_stringpac();//USADA
+	void Imprimirpac();
 
 	static int cant_pacientes;
 	
@@ -48,7 +51,7 @@ protected:
 	float Radio_Amput;
 	cProtesis* Prot_Necesitada; 
 	bool ProtesisConseguida; //true consiguio la protesis flase no la consiguio
-	Alegrias Alergia;
+	Alergias Alergia;
 	Miembros MiembroProtesis;
 	string MatriculadelMed;
 	

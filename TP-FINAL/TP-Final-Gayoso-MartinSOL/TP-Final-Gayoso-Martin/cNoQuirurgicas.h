@@ -11,8 +11,10 @@ public:
 	void set_Largo(float Larg);//USADO
 	void set_Ancho(float Anch);//USADO
 
-	//bool operator==(cProtesis& prots);
+	bool operator==(cProtesis& prots);
 	friend ostream& operator<<(ostream& out, cNoQuirurgicas& NQ);
+	string to_stringP();
+	void imprimirP();
 protected:
 	float Radio;
 	float Largo;

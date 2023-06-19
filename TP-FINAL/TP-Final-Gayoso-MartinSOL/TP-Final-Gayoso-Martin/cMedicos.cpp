@@ -93,3 +93,14 @@ cMedicos& cMedicos::operator=(const cMedicos& acopiar)
 	}
 	return *this;
 }
+std::string cMedicos::to_stringM()
+{
+	stringstream salida;
+	salida << "Nombre del Medico: " << this->nombre << "Apellido del Medico: " << this->apellido << "ID del Medico: " << this->ID << "Matricula del Medico: " << this->Matricula;
+	return salida.str();
+}
+
+void cMedicos::ImprimirM()
+{
+	cout << this->to_stringM() << endl;
+}

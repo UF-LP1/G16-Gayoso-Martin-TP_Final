@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="cAlegrias.h" />
+    <ClInclude Include="cAlergias.h" />
     <ClInclude Include="cANPA.h" />
     <ClInclude Include="cEstablecimiento.h" />
     <ClInclude Include="cFabricante.h" />
@@ -171,6 +171,7 @@
     <ClCompile Include="cQuirurgicas.cpp" />
     <ClCompile Include="cRegistro.cpp" />
     <ClCompile Include="Funciones.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

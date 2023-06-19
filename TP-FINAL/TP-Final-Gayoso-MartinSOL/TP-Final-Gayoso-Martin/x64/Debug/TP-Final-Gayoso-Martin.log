@@ -1,61 +1,106 @@
-﻿  cAlegrias.cpp
-  cANPA.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(13,19): error C2061: error de sintaxis: identificador 'cANPA'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(35,3): error C2039: "endl": no es un miembro de "cPacientes"
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(6): message : vea la declaración de 'cPacientes'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : debido a los siguientes miembros:
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+﻿  cANPA.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(32,10): error C2084: la función 'std::ostream &operator <<(std::ostream &,cProtesis &)' ya tiene un cuerpo
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(47): message : vea la definición anterior de '<<'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.cpp(97,20): error C2679: '<<' binario: no se encontró un operador que adopte un operando en la parte derecha de tipo 'cRegistro' (o bien no existe una conversión aceptable)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(471,39): message : puede ser 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(439,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(421,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(403,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(385,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(367,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(349,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(331,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(313,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(294,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(268,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(249,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(215,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(197,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(192,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(187,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\ostream(182,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(55,10): message : o       'std::ostream &operator <<(std::ostream &,cOrtopedia &)'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(49,10): message : o       'std::ostream &operator <<(std::ostream &,cHospital &)'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(44,10): message : o       'std::ostream &operator <<(std::ostream &,cMedicos &)'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(36,10): message : o       'std::ostream &operator <<(std::ostream &,cPacientes &)'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(32,10): message : o       'std::ostream &operator <<(std::ostream &,cProtesis &)'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.cpp(97,20): message : al hacer coincidir la lista de argumentos '(std::ostream, cRegistro)'
   cEstablecimiento.cpp
   cFabricante.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cFabricante.cpp(33,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  cFechass.cpp
   cHospital.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(35,3): error C2039: "endl": no es un miembro de "cPacientes"
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(6): message : vea la declaración de 'cPacientes'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
   cMedicos.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(17,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(20,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(22,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(28,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(30,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(39,2): error C2059: error de sintaxis: '}'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(20,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(31,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(33,7): warning C4553: "==": el resultado de la expresión no se usa. ¿Quiso decir "="?
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(59,32): error C2664: 'void cPacientes::set_Protesis_Nec(cProtesis *)': el argumento 1 no puede convertirse de 'cQuirurgicas *' a 'cProtesis *'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(59,30): message : Los tipos señalados no están relacionados; la conversión requiere reinterpret_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(35,7): message : vea la declaración de 'cPacientes::set_Protesis_Nec'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(72,34): error C2664: 'void cPacientes::set_Protesis_Nec(cProtesis *)': el argumento 1 no puede convertirse de 'cNoQuirurgicas *' a 'cProtesis *'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(72,31): message : Los tipos señalados no están relacionados; la conversión requiere reinterpret_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(35,7): message : vea la declaración de 'cPacientes::set_Protesis_Nec'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(38,22): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   cNoQuirurgicas.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
   cOrtopedia.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(35,3): error C2039: "endl": no es un miembro de "cPacientes"
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(6): message : vea la declaración de 'cPacientes'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : debido a los siguientes miembros:
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(36,18): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(36,18): message : debido a los siguientes miembros:
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(36,18): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(36,18): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(41,18): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(41,18): message : debido a los siguientes miembros:
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(41,18): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(41,18): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(46,18): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(46,18): message : debido a los siguientes miembros:
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(46,18): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(46,18): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(48,34): error C2676: '-' binario: 'std::list<cProtesis,std::allocator<cProtesis>>' no define este operador o una conversión a un tipo aceptable para el operador predefinido
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,65): error C2676: '==' binario: 'const _Ty' no define este operador o una conversión a un tipo aceptable para el operador predefinido
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(57,12): error C2027: uso del tipo 'cOrtopedia' sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(15): message : vea la declaración de 'cOrtopedia'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(57,30): error C2027: uso del tipo 'cOrtopedia' sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(15): message : vea la declaración de 'cOrtopedia'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(32,10): error C2084: la función 'std::ostream &operator <<(std::ostream &,cProtesis &)' ya tiene un cuerpo
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(47): message : vea la definición anterior de '<<'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(52,14): error C2264: 'operator <<': error en la definición o declaración de función; no se ha llamado a la función
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(52,8): error C2088: '<<': no es válido para class
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(61,14): error C2264: 'operator <<': error en la definición o declaración de función; no se ha llamado a la función
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(61,8): error C2088: '<<': no es válido para class
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,1): error C2678: '==' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'const _Ty' (o bien no existe una conversión aceptable)
+          with
+          [
+              _Ty=cProtesis
+          ]
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(31,15): message : puede ser 'bool cProtesis::operator ==(cProtesis &)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,1): message : al hacer coincidir la lista de argumentos '(const _Ty, const _Ty)'
           with
           [
               _Ty=cProtesis
@@ -65,14 +110,16 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.3110
           [
               _Ty=cProtesis
           ]
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(25): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<cProtesis,std::allocator<cProtesis>>" que se está compilando
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(27): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<cProtesis,std::allocator<cProtesis>>" que se está compilando
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(292,17): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(11): message : vea la declaración de 'cProtesis'
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(292,17): message : debido a los siguientes miembros:
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(292,17): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(27): message : vea la declaración de 'cProtesis::set_Sup_Inf'
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(292,17): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(28): message : vea la declaración de 'cProtesis::set_Der_Izq'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(292,17): message : 'bool cProtesis::operator ==(cProtesis &)': es abstracto
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(31): message : vea la declaración de 'cProtesis::operator =='
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1595): message : Vea la referencia a la creación de una instancia de clase plantilla "std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>" que se está compilando
           with
           [
@@ -86,34 +133,79 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.3110
           ]
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1597,1): error C2451: una expresión condicional de tipo "void" no es válida
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1597,22): message : Las expresiones de tipo void no se pueden convertir en otros tipos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(82,8): error C2039: "quitar_Protesis": no es un miembro de "cOrtopedia"
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(7): message : vea la declaración de 'cOrtopedia'
   cPacientes.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.cpp(3,120): error C2440: 'inicializando': no se puede realizar la conversión de 'const cProtesis' a 'cProtesis *'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.cpp(3,120): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.cpp(4,1): error C2439: 'cPacientes::Prot_Necesitada': no se pudo inicializar el miembro
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(35): message : vea la declaración de 'cPacientes::Prot_Necesitada'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
   cPersonas.cpp
   cProtesis.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
   cQuirurgicas.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
   cRegistro.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.h(35,3): error C2039: "endl": no es un miembro de "cPacientes"
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(6): message : vea la declaración de 'cPacientes'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(19,7): error C2065: 'cRegistro': identificador no declarado
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(19,2): error C2923: 'std::list': 'cRegistro' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(19): message : vea la declaración de 'cRegistro'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(19,2): error C2976: 'std::list': no hay suficientes argumentos de plantilla
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(754): message : vea la declaración de 'std::list'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : debido a los siguientes miembros:
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.h(21,12): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(3,12): error C2259: "cProtesis": no se puede crear una instancia de una clase abstract
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(8): message : vea la declaración de 'cProtesis'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(3,12): message : debido a los siguientes miembros:
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(3,12): message : 'void cProtesis::set_Sup_Inf(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(20): message : vea la declaración de 'cProtesis::set_Sup_Inf'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(3,12): message : 'void cProtesis::set_Der_Izq(bool)': es abstracto
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(21): message : vea la declaración de 'cProtesis::set_Der_Izq'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(57,12): error C2027: uso del tipo 'cOrtopedia' sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(15): message : vea la declaración de 'cOrtopedia'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(57,30): error C2027: uso del tipo 'cOrtopedia' sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.h(15): message : vea la declaración de 'cOrtopedia'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(32,10): error C2084: la función 'std::ostream &operator <<(std::ostream &,cProtesis &)' ya tiene un cuerpo
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(47): message : vea la definición anterior de '<<'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(60,19): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Funciones.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(20,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(21,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(25,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(26,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(30,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(31,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(35,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(36,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  main.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(5,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(8,39): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,43): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.h(15,7): error C3668: 'cQuirurgicas::operator ==': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(4,1): error C2504: 'cProtesis': clase base sin definir
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(6,41): error C2061: error de sintaxis: identificador 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,18): error C2061: error de sintaxis: identificador 'cProtesis'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.h(14,35): error C2805: 'operator ==' binario no tiene suficientes parámetros
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(7,1): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\TP-FINAL-F\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(13,52): error C2661: 'cQuirurgicas::cQuirurgicas': ninguna función sobrecargada acepta 3 argumentos
   Generando código...

@@ -10,7 +10,7 @@ cHospital::~cHospital()
 {
 }
 
-void cHospital::Agregar_Pac(cPacientes NewPac)
+void cHospital::Agregar_Pac(cPacientes NewPac)   
 {
 	bool Pac_Registrado = false;
 
@@ -59,7 +59,7 @@ void cHospital::Imprimir_Med()
 
 void cHospital::operator+(cPacientes& pac)
 {
-	this->Agregar_Pac(pac);
+	this->Agregar_Pac(pac);   
 }
 
 void cHospital::operator+(cMedicos& Med)
@@ -109,4 +109,17 @@ cHospital& cHospital::operator=(const cHospital& acopiar)
 //	
 //}
 
+
+std::string cHospital::to_stringH()
+{
+	stringstream salida;
+	salida << "Nombre del Hospital: " << this->Nombre << "Direccion del Hospital: " << this->Direc;
+	return salida.str();
+}
+
+
+void cHospital :: ImprimirH()
+{
+	cout << this -> to_stringH() << endl;
+}
 

@@ -1,6 +1,8 @@
 #pragma once
-
+#include <sstream>
 #include <iostream>
+#include <string>
+using namespace std;
 
 class cFechass
 {
@@ -19,6 +21,8 @@ public:
 	friend class cRegistro;
 	friend class cPacientes;
 
+	string to_stringF();
+	void imprimirF();
 	
 	//cFechass& operator=(const cFechass& otro);
 };

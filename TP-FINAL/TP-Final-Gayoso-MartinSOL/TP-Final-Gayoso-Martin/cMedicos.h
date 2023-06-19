@@ -19,7 +19,13 @@ public:
 	void AsignarProtesis(cPacientes & _paciente, unsigned int k);
 	string get_Matric();
 	cMedicos& operator=(const cMedicos& acopiar);
+
+	string to_stringM();
+	void ImprimirM();
+
+
 protected:
 	string Matricula;
 	
 };
+

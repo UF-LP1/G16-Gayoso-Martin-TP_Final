@@ -85,6 +85,27 @@ cHospital cRegistro::get_hosp()
     return this->Hospital;
 }
 
+string cRegistro::to_stringR()
+{
+    stringstream salida;
+    salida << "Fecha de Entrega:" << this->Fecha_Entrega.to_stringF()
+        << "Cantidad de dias estimados para la entrega:" << this->Fecha_EstE
+        << "Fecha de Solicitud de l Protesis: " << this->Fecha_Sol.to_stringF()
+        << "Hospital: " << this->Hospital.to_stringH()
+        << "Medico: " << this->Medico.to_stringM()
+        << "Paciente: " << this->Paciente.to_stringpac()
+        << "Pieza Ortopedica:" << this->P_Ort->to_stringP();
+    
+    return salida.str();
+    return string();
+}
+
+void cRegistro::imprimirR()
+{
+    cout << this->to_stringR() << endl;
+
+}
+
 
 
 

@@ -26,6 +26,8 @@ public:
 	cMedicos get_med();
 	cHospital get_hosp();
 	
+	string to_stringR();
+	void imprimirR();
 
 protected:
 	cHospital Hospital;
