@@ -79,7 +79,7 @@ void cOrtopedia::quitar_Protesis_delStock(cProtesis &_Protesis)
 
 void cOrtopedia::operator-(cProtesis& prot)
 {
-	this->quitar_Protesis(prot);
+	this->quitar_Protesis_delStock(prot);
 }
 
 

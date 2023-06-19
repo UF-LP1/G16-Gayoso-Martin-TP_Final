@@ -4,12 +4,12 @@
 #include "cPersonas.h"
 #include "cAlergias.h" 
 #include "Miembros.h"
-#include "cFechass.h"
+
 
 class cMedicos;
 class cPacientes : public cPersonas
 {
-public:
+public:      
 	
 	cPacientes(string id,string Nom, string app, cProtesis& prot, Alergias Aler, Miembros Miemb, cFechass fecha);
 	~cPacientes();

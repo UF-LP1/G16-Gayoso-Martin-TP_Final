@@ -1,8 +1,6 @@
 #pragma once
 #include "cEstablecimiento.h"
-#include "cProtesis.h"
 #include <list>
-#include "cANPA.h"
 #include "cPacientes.h"
 class cOrtopedia: public cEstablecimiento
 {
@@ -21,7 +19,7 @@ public:
 	
 
 
-	 void operator-(cProtesis& prot);
+	 void operator-(cProtesis& prot);  
 
 protected:
 	list <cProtesis> Lista_Protesis;

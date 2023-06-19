@@ -1,13 +1,8 @@
 #pragma once
-#include<string>
+
 #include "cPersonas.h" 
 #include "cPacientes.h"
-#include "cProtesis.h"
-#include "cNoQuirurgicas.h"
-#include "cQuirurgicas.h"
-#include <vector>
-#include <list>
-#include <ctime>
+
 using namespace std;
 
 class cMedicos : public cPersonas
