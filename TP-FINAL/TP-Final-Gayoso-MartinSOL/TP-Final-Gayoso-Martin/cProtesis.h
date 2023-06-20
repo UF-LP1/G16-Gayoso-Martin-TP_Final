@@ -29,7 +29,9 @@ public:
 	virtual string to_stringP();// USADA
 	virtual void imprimirP();
 	virtual bool operator==(const cProtesis& prots);
-	
+
+	friend ostream& operator<<(ostream& out, cProtesis& prot);
+
 protected:
 	
 	cFechass Fecha_Fabric; 
@@ -44,11 +46,11 @@ protected:
 
 #endif 
  
-ostream& operator<<(ostream& out, cProtesis& prot)
-{
-	out << prot.to_stringP();
-	return out;
-}
+//ostream& operator<<(ostream& out, cProtesis& prot)
+//{
+//	out << prot.to_stringP();
+//	return out;
+//}
 //bool operator==(cProtesis& prots, cProtesis& pro)
 //{
 //	if (pro.get_Der_Izq() == prots.get_Der_Izq() && pro.get_Sup_Inf() == prots.get_Sup_Inf())

@@ -28,6 +28,9 @@ public:
 
 	string to_stringH();//USADA
 	void ImprimirH();//USADA
+
+	friend ostream& operator<<(ostream& out, cMedicos& med);
+	friend ostream& operator<<(ostream& out, cPacientes& _Pac);
 protected:
 	list<cMedicos> Lista_Medicos;
 	list<cPacientes> Lista_Pacientes;
@@ -35,15 +38,15 @@ protected:
 };
 
 #endif
-ostream& operator<<(ostream& out, cMedicos& med)
-{
-	out << med.to_stringM();
-
-	return out;
-}
-ostream& operator<<(ostream& out, cPacientes& _Pac)
-{
-	out << _Pac.to_stringpac();
-	return out;
-}
+//ostream& operator<<(ostream& out, cMedicos& med)
+//{
+//	out << med.to_stringM();
+//
+//	return out;
+//}
+//ostream& operator<<(ostream& out, cPacientes& _Pac)
+//{
+//	out << _Pac.to_stringpac();
+//	return out;
+//}
 

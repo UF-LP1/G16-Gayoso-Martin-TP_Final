@@ -83,7 +83,8 @@
 
 	}
 
-
-
-
-
+	ostream& operator<<(ostream& out, cProtesis& prot)
+	{
+		out << prot.to_stringP();
+		return out;
+	}

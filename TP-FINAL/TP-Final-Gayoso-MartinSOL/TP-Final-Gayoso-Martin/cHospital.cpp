@@ -134,3 +134,14 @@ void cHospital :: ImprimirH()
 	cout << this -> to_stringH() << endl;
 }
 
+ostream& operator<<(ostream& out, cMedicos& med)
+{
+	out << med.to_stringM(); 
+	return out;
+}
+
+ostream& operator<<(ostream& out, cPacientes& _Pac)
+{
+	out << _Pac.to_stringpac();
+	return out;
+}
