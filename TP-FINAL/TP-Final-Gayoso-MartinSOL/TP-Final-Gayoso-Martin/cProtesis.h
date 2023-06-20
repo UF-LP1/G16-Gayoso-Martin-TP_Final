@@ -3,17 +3,15 @@
 #include<iostream>
 #include <ctime>
 #include "cFabricante.h"
-#include "cQuirurgicas.h"
-#include "cNoQuirurgicas.h"
+
 #include "cFechass.h"
 using namespace std;
 
 class cProtesis
 {
 public:
-	friend class cQuirurgicas;
-	friend class cNoQuirurgicas;
-	cProtesis(cFabricante &fabricante, cFechass fecha={1,1,2001}, cFechass fecha_s={1,1,2001});
+	
+	cProtesis(cFabricante &fabricante, cFechass fecha, cFechass fecha_s);
 	~cProtesis();
 
 	cFechass get_Fecha_Fab();
@@ -24,12 +22,12 @@ public:
 
 	void set_Fecha_Fab(cFechass FF);
 	void set_Fecha_Sol(cFechass FS);
-	virtual void set_Sup_Inf(bool SF)=0;
-	virtual void set_Der_Izq(bool DI)=0;
-	virtual string to_stringP()=0;
-	virtual void imprimirP() = 0;
+	virtual void set_Sup_Inf(bool SF);
+	virtual void set_Der_Izq(bool DI);
+	virtual string to_stringP();
+	virtual void imprimirP();
 
-	virtual bool operator==(cProtesis& prots)=0;
+	virtual bool operator==(cProtesis& prots);
 
 	
 
@@ -44,7 +42,7 @@ protected:
 
 
 };
-
+ 
 ostream& operator<<(ostream& out, cProtesis& prot)
 {
 	//out<<_Prot.to_stringP()

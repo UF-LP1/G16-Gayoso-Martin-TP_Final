@@ -2,8 +2,10 @@
 
 #include "cPersonas.h" 
 #include "cPacientes.h"
-
-using namespace std;
+#include <ctime>
+#include "cNoQuirurgicas.h"
+#include "cQuirurgicas.h"
+using namespace std;  
 
 class cMedicos : public cPersonas
 {

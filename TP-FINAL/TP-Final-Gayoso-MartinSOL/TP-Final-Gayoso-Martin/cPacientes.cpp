@@ -107,9 +107,9 @@ void cPacientes::set_Rad_Amput(float R_A)
 	this->Radio_Amput = R_A;
 }
 
-void cPacientes::set_Protesis_Nec(cProtesis *Prot)
+void cPacientes::set_Protesis_Nec(cProtesis &Prot)
 {
-	this->Prot_Necesitada = Prot;
+	this->Prot_Necesitada = &Prot;
 }
 
 void cPacientes::set_Alergias(Alergias ale) 

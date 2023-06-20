@@ -57,10 +57,11 @@ cFechass cRegistro::generarFechaE()
 
     tiempoE += diasEs;
 
-    tm* NFechaE = localtime(&tiempoE);
-    this->Fecha_Entrega.dia = NFechaE->tm_mday;
-    this->Fecha_Entrega.mes = NFechaE->tm_mon + 1;
-    this->Fecha_Entrega.anio = NFechaE->tm_year + 1900;
+    tm NFechaE;
+    localtime_s(&NFechaE,&tiempoE);
+    this->Fecha_Entrega.dia = NFechaE.tm_mday;
+    this->Fecha_Entrega.mes = NFechaE.tm_mon + 1;
+    this->Fecha_Entrega.anio = NFechaE.tm_year + 1900;
 
     return this->Fecha_Entrega;
 }

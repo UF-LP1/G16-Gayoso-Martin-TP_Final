@@ -102,19 +102,21 @@ Miembros switch2(unsigned int op)
 cProtesis* ProtesisNecesitada(unsigned int p)
 {
 	cProtesis* protesis= nullptr;
+	cQuirurgicas* cQ = nullptr;
+	cNoQuirurgicas* cNQ = nullptr;
 	while (p < 1 || p>2)
 	{
 		switch (p)
 		{
 
 		case 1:
-			cQuirurgicas * cQ = dynamic_cast<cQuirurgicas*>(protesis);
+			 cQ = dynamic_cast<cQuirurgicas*>(protesis);
 			return cQ;
 
 		case 2:
-			cNoQuirurgicas * cNQ = dynamic_cast<cNoQuirurgicas*>(protesis);
+			cNQ = dynamic_cast<cNoQuirurgicas*>(protesis);
 			return cNQ;
 		}
 	}
-	
+	return nullptr;
 }

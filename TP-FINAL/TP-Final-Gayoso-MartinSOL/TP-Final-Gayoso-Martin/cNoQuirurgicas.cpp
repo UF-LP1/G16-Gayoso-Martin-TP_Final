@@ -1,6 +1,6 @@
 #include "cNoQuirurgicas.h"
 
-cNoQuirurgicas::cNoQuirurgicas(cFabricante& fabricante, cFechass fecha, cFechass fecha_s) : cProtesis(fabricante, fecha, fecha_s)
+cNoQuirurgicas::cNoQuirurgicas(cFabricante& fabricante, cFechass fecha, cFechass fecha_s ) : cProtesis(fabricante, fecha, fecha_s)
 {
 	this->Radio = 0.0;
 	this->Largo = 0.0;
@@ -39,21 +39,26 @@ void cNoQuirurgicas::set_Ancho(float Anch)
 
 bool cNoQuirurgicas::operator==(cProtesis& prots)
 {
-	if (this->Der_Izq == prots.Der_Izq && this->Sup_Inf == prots.Sup_Inf)
-	{
-		cNoQuirurgicas* CNQ = dynamic_cast<cNoQuirurgicas*>(&prots);
-		if (CNQ != NULL)
-		{
-			if (this->Radio == CNQ->Radio && this->Largo == CNQ->Largo && this->Ancho == CNQ->Ancho)
-			{
-				return true; 
-			}	
+	if (this->Der_Izq == prots.get_Der_Izq() && this->Sup_Inf == prots.get_Sup_Inf()){
 
+				cNoQuirurgicas* CNQ = dynamic_cast<cNoQuirurgicas*>(&prots);
+				if (CNQ != NULL)
+				{
+					if (this->Radio == CNQ->Radio && this->Largo == CNQ->Largo && this->Ancho == CNQ->Ancho)
+					{
+						return true; 
+					}	
+		
+				}
 		}
-	}
-	else
-		return false;
+			else
+				return false;  
 }
+
+
+
+
+
 
 ostream& operator<<(ostream& out, cNoQuirurgicas& NQ)
 {

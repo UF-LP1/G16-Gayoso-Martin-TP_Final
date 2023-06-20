@@ -1,2 +1,2 @@
 #pragma once
-enum Miembros{Brazo,Pierna,Mano,Pie,NO};
+enum Miembros{Brazo,Pierna,Mano,Pie,NOHay};

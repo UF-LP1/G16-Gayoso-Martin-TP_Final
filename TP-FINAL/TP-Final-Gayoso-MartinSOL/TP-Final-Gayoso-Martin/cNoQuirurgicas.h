@@ -3,7 +3,7 @@
 class cNoQuirurgicas: public cProtesis
 {
 public:
-	cNoQuirurgicas(cFabricante& fabricante, cFechass fecha, cFechass fecha_s);
+	cNoQuirurgicas(cFabricante& fabricante, cFechass fecha , cFechass fecha_s);
 	~cNoQuirurgicas();
 	void set_Sup_Inf(bool SF);//USADO
 	void set_Der_Izq(bool DI);//USADO
@@ -11,7 +11,7 @@ public:
 	void set_Largo(float Larg);//USADO
 	void set_Ancho(float Anch);//USADO
 
-	bool operator==(cProtesis& prots);
+	 bool operator==(cProtesis& prots);
 	friend ostream& operator<<(ostream& out, cNoQuirurgicas& NQ);
 	string to_stringP();
 	void imprimirP();

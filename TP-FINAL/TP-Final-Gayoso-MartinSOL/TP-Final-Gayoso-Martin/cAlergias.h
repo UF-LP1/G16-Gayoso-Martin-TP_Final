@@ -1,2 +1,2 @@
  
-enum Alergias { Acero, CobaltoyCromo, Titanio, Tantalio,Ceramica,NO};
+enum Alergias { Acero, CobaltoyCromo, Titanio, Tantalio,Ceramica,NOt};

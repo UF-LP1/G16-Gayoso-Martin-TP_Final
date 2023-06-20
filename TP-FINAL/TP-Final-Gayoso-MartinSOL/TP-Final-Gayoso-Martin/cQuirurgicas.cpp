@@ -1,6 +1,6 @@
 #include "cQuirurgicas.h"
 
-cQuirurgicas::cQuirurgicas(cFabricante& fabricante, cFechass fecha, cFechass fecha_s) : cProtesis(fabricante, fecha, fecha_s)
+cQuirurgicas::cQuirurgicas(cFabricante& fabricante, cFechass fecha , cFechass fecha_s) : cProtesis(fabricante, fecha, fecha_s)
 {
 	this->Material = " ";
 }
@@ -27,7 +27,7 @@ void cQuirurgicas::set_Mat(string Mat)
 
 bool cQuirurgicas::operator==(cProtesis& prots)
 {
-	if (this->Der_Izq == prots.Der_Izq && this->Sup_Inf == prots.Sup_Inf )
+	if (this->Der_Izq == prots.get_Der_Izq() && this->Sup_Inf == prots.get_Sup_Inf())
 	{
 		cQuirurgicas* CQ = dynamic_cast<cQuirurgicas*>(&prots);
 		if (CQ != NULL)

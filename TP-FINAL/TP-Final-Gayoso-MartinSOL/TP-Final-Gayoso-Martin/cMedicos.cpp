@@ -1,5 +1,8 @@
 #include "cMedicos.h"
-
+#ifndef __STD_LIB_EXT1__
+#define __STD_LIB_EXT1__
+#endif
+#define __STD__WANT_LIB_EXT1__1
 
 cMedicos::cMedicos(string id,string Nom, string app):cPersonas(id,Nom,app)
 {
@@ -28,22 +31,26 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 	aux = 0;
 	aux = rand() % (1 - 0);
 	if (aux == 1)
-		var == true;
+		var = true;
 	else
-		var == false;
+		var = false;
 	_paciente.get_Prot_Nec()->set_Sup_Inf(var);
 
 
 	time_t tiempoActual = time(0);
-	struct tm* tiempo = localtime(&tiempoActual);
-	cFechass FechaSol(tiempo->tm_mday, tiempo->tm_mon + 1, tiempo->tm_year + 1900);
+	
+
+	struct tm tiempo;
+	localtime_s(&tiempo ,&tiempoActual);
+	
+	cFechass FechaSol(tiempo.tm_mday, tiempo.tm_mon + 1, tiempo.tm_year + 1900);
 
 	_paciente.get_Prot_Nec()->set_Fecha_Sol(FechaSol);//le tenemos que pasar una variable fecha
 
 	_paciente.get_Prot_Nec()->set_Fecha_Fab(FechaSol);
 	
 	//this->Fecha_Entrega = this->Fecha_Sol;
-	unsigned int var = 0;
+	unsigned int vark = 0;
 
 	var = rand() % (15 - 10);
 	tm FechaE = {};
@@ -53,14 +60,15 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 
 	time_t tiempoE = mktime(&FechaE); //paso la fecha de entrega a segundos
 
-	time_t diasEs =  var * 24 * 60 * 60;// paso los dias estimados a segundos
+	time_t diasEs =  vark * 24 * 60 * 60;// paso los dias estimados a segundos
 
 	tiempoE += diasEs;
 
-	tm* NFechaE = localtime(&tiempoE);
-	_paciente.get_Prot_Nec()->get_Fecha_Fab().set_dia(NFechaE->tm_mday);
-	_paciente.get_Prot_Nec()->get_Fecha_Fab().set_mes(NFechaE->tm_mon+1);
-	_paciente.get_Prot_Nec()->get_Fecha_Fab().set_anio(NFechaE->tm_year+1900);
+	tm NFechaE;
+	localtime_s(&NFechaE,&tiempoE);
+	_paciente.get_Prot_Nec()->get_Fecha_Fab().set_dia(NFechaE.tm_mday);
+	_paciente.get_Prot_Nec()->get_Fecha_Fab().set_mes(NFechaE.tm_mon+1);
+	_paciente.get_Prot_Nec()->get_Fecha_Fab().set_anio(NFechaE.tm_year+1900);
 
 
 	
@@ -79,7 +87,7 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 		} while (aux==_paciente.get_Alergias());
 		
 
-		_paciente.set_Protesis_Nec(CQ); 
+		_paciente.set_Protesis_Nec(*CQ); 
 	}
 	else
 	{
@@ -92,7 +100,7 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 			aux = rand() % (4 - 0);
 
 
-			_paciente.set_Protesis_Nec(CNQ);
+			_paciente.set_Protesis_Nec(*CNQ);
 		
 			_paciente.set_MatriculaMed(this->Matricula);
 		}

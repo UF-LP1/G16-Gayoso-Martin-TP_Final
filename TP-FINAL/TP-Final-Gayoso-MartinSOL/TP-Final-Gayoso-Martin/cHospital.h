@@ -45,5 +45,5 @@ ostream& operator<<(ostream& out, cMedicos& med)
 {
 	//out<<med.to_stringM();
 	out << med.get_ID() << med.get_nombre() << med.get_apellido() << med.get_Matric();
-
+	return out;
 }

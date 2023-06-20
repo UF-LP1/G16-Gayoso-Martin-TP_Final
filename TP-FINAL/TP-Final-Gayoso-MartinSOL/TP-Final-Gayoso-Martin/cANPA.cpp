@@ -109,15 +109,15 @@ void cANPA::Imprimir_Hospitales()
 
 }
 
-ostream& operator<<(ostream& out, cRegistro& reg)
-{
-    //out<<reg.to_stringR();
-    out << reg.get_FechaSol().get_dia() << reg.get_FechaSol().get_mes() << reg.get_FechaSol().get_anio() << reg.generarFechaE().get_dia()
-        << reg.generarFechaE().get_mes() << reg.generarFechaE().get_mes() << reg.generarFechaE().get_anio();
-    cPacientes aux = reg.get_pac();
-    cMedicos aux1 = reg.get_med();
-    cHospital aux2 = reg.get_hosp();
-    out << aux<<aux1<<aux2;
-    
-    return out;
-}
+//ostream& operator<<(ostream& out, cRegistro& reg)
+//{
+//    //out<<reg.to_stringR();
+//    out << reg.get_FechaSol().get_dia() << reg.get_FechaSol().get_mes() << reg.get_FechaSol().get_anio() << reg.generarFechaE().get_dia()
+//        << reg.generarFechaE().get_mes() << reg.generarFechaE().get_mes() << reg.generarFechaE().get_anio();
+//    cPacientes aux = reg.get_pac();
+//    cMedicos aux1 = reg.get_med();
+//    cHospital aux2 = reg.get_hosp();
+//    out << aux<<aux1<<aux2;
+//    
+//    return out;
+//}

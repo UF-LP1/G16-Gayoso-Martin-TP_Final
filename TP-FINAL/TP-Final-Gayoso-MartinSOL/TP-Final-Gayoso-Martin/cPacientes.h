@@ -33,7 +33,7 @@ public:
 	void set_Tel(string _Tel);//USADA
 	void set_Nombre_Hosp(string _N_H);//USADA
 	void set_Rad_Amput(float R_A);//USADA
-	void set_Protesis_Nec(cProtesis* Prot); //USADA
+	void set_Protesis_Nec(cProtesis& Prot); //USADA
 	void set_Alergias(Alergias ale);//USADA
 	void set_Miembro(Miembros M);//USADA
 	void set_MatriculaMed(string Mat);//Usada
