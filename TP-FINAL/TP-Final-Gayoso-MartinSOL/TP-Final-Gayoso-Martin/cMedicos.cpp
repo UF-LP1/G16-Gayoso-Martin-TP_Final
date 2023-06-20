@@ -124,6 +124,10 @@ cMedicos& cMedicos::operator=(const cMedicos& acopiar)
 	}
 	return *this;
 }
+void cMedicos::set_Matricula(string mat)
+{
+	this->Matricula = mat;
+}
 std::string cMedicos::to_stringM()
 {
 	stringstream salida;

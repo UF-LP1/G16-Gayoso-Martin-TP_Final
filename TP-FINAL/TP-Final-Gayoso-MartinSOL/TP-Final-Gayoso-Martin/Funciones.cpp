@@ -149,12 +149,13 @@ cMedicos* crearMedicos()
 {
 	string arrayName[5] = { "Camila", "Valentina", "Sol", "Mateo", "Matias" };
 	string arrayApp[5] = { "Martin", "Gayoso", "Fiterman", "Picolomini", "Salvi" };
-	string arrayId[5] = { "7428", "9732", "2693", "1426", "97639" };
+	string arrayId[10] = { "7428", "9732", "2693", "1426", "97639", "92462", "87521", "7921", "205456","06563" };// los primeros 5 son para el id y los otros 5 para las matriculas
 	int posN = rand() % (4 - 0);
 	int posA = rand() % (4 - 0);
 	int id = rand() % (4 - 0);
+	int mat = rand() % (9 - 5);
 	cMedicos* medico1 = new cMedicos(arrayId[id], arrayName[posN], arrayApp[posA]);
-
+	medico1->set_Matricula(arrayId[mat]);
 
 	return medico1;
 }

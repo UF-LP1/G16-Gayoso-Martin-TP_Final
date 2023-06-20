@@ -17,7 +17,7 @@ public:
 	void AsignarProtesis(cPacientes & _paciente, unsigned int k);//USADA
 	string get_Matric();//USADA
 	cMedicos& operator=(const cMedicos& acopiar);//USADA
-
+	void set_Matricula(string mat);
 	string to_stringM();//USADA
 	void ImprimirM();//USADA
 
