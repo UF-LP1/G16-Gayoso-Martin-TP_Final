@@ -5,6 +5,6 @@
 #include "Funciones.h"
 using namespace std;
 
-void main()
+int main()
 {
 }

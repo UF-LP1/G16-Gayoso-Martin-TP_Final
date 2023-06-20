@@ -11,7 +11,7 @@ public:
 	void set_Largo(float Larg);//USADO
 	void set_Ancho(float Anch);//USADO
 
-	 bool operator==(cProtesis& prots);
+	 bool operator==(const cNoQuirurgicas& cNQ)const;
 	friend ostream& operator<<(ostream& out, cNoQuirurgicas& NQ);
 	string to_stringP();
 	void imprimirP();

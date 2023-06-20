@@ -1,14 +1,24 @@
-﻿  cANPA.cpp
+﻿  Funciones.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(20,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(21,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(25,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(26,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(30,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(31,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(35,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(36,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  cANPA.cpp
   cHospital.cpp
   cMedicos.cpp
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(23,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  cNoQuirurgicas.cpp
   cOrtopedia.cpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,1): error C2678: '==' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'const _Ty' (o bien no existe una conversión aceptable)
           with
           [
               _Ty=cProtesis
           ]
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(30,15): message : puede ser 'bool cProtesis::operator ==(cProtesis &)'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(30,15): message : puede ser 'bool cProtesis::operator ==(const cProtesis &)'
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,1): message : al hacer coincidir la lista de argumentos '(const _Ty, const _Ty)'
           with
           [
@@ -28,33 +38,13 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.3110
               _Pr1=std::list<cProtesis,std::allocator<cProtesis>>::remove::<lambda_a30b751dddf1337e792daf429d6d69e4>
           ]
   cPacientes.cpp
+  cProtesis.cpp
   cQuirurgicas.cpp
   cRegistro.cpp
-  Funciones.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(20,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(21,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(25,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(26,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(30,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(31,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(35,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(36,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   main.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(9,1): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(185,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(186,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(191,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(192,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(213,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(214,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(219,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(220,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(221,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(225,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(226,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(227,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Generando código...
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cQuirurgicas.cpp(44): warning C4715: 'cQuirurgicas::operator==': no todas las rutas de acceso de control devuelven un valor
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cNoQuirurgicas.cpp(56): warning C4715: 'cNoQuirurgicas::operator==': no todas las rutas de acceso de control devuelven un valor
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.cpp(85): warning C4715: 'cHospital::BuscarPorMat': no todas las rutas de acceso de control devuelven un valor
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.cpp(32): warning C4715: 'cANPA::BuscarPorOrtopedia': no todas las rutas de acceso de control devuelven un valor
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.cpp(65): warning C4715: 'cANPA::buscar_Hosp': no todas las rutas de acceso de control devuelven un valor

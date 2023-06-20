@@ -16,8 +16,8 @@ public:
 
 	cFechass get_Fecha_Fab();
 	cFabricante get_Fabricante();
-	bool get_Sup_Inf();
-	bool get_Der_Izq();
+	const bool get_Sup_Inf()const;
+	const bool get_Der_Izq()const ;
 	cFechass get_FechaSol();
 
 	void set_Fecha_Fab(cFechass FF);
@@ -27,7 +27,7 @@ public:
 	virtual string to_stringP();
 	virtual void imprimirP();
 
-	virtual bool operator==(cProtesis& prots);
+	virtual bool operator==(const cProtesis& prots);
 
 	
 

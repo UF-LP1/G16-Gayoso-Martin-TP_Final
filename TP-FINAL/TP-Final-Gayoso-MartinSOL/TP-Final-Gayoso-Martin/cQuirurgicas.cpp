@@ -25,19 +25,19 @@ void cQuirurgicas::set_Mat(string Mat)
 	this->Material = Mat;
 }
 
-bool cQuirurgicas::operator==(cProtesis& prots)
+bool cQuirurgicas::operator==(const cQuirurgicas& cQ)const
 {
-	if (this->Der_Izq == prots.get_Der_Izq() && this->Sup_Inf == prots.get_Sup_Inf())
+	if (this->Der_Izq == cQ.get_Der_Izq() && this->Sup_Inf == cQ.get_Sup_Inf())
 	{
-		cQuirurgicas* CQ = dynamic_cast<cQuirurgicas*>(&prots);
-		if (CQ != NULL)
-		{
-			if (this->Material==CQ->Material)
+		/*cQuirurgicas* CQ = dynamic_cast<cQuirurgicas*>(&prots);
+		if (CQ != NULL)*/
+		//{
+			if (this->Material==cQ.Material)
 			{
 				return true;
 
 			}
-		}
+		//}
 	}
 	else
 		return false;

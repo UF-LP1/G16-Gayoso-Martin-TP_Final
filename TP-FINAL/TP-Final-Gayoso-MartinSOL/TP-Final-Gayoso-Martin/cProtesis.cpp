@@ -20,12 +20,14 @@
 		return this->Fabricante;
 	}
 
-	bool cProtesis::get_Sup_Inf()
+	
+
+	const bool cProtesis::get_Sup_Inf() const
 	{
 		return this->Sup_Inf;
 	}
 
-	bool cProtesis::get_Der_Izq()
+	const bool cProtesis::get_Der_Izq() const
 	{
 		return this->Der_Izq;
 	}
@@ -69,7 +71,7 @@
 		cout << this->to_stringP() << endl;
 	}
 
-	bool cProtesis::operator==(cProtesis& prots)
+	bool cProtesis::operator==(const cProtesis& prots)
 	{
 		if (this->Der_Izq == prots.Der_Izq && this->Sup_Inf == prots.Sup_Inf) {
 			return true;
