@@ -121,7 +121,7 @@ cHospital& cHospital::operator=(const cHospital& acopiar)
 //}
 
 
-std::string cHospital::to_stringH()
+std:: string cHospital::to_stringH() const
 {
 	stringstream salida;
 	salida << "Nombre del Hospital: " << this->Nombre << "Direccion del Hospital: " << this->Direc;
@@ -134,14 +134,11 @@ void cHospital :: ImprimirH()
 	cout << this -> to_stringH() << endl;
 }
 
-ostream& operator<<(ostream& out, cMedicos& med)
+ostream& operator<<(ostream& out, const cHospital& hosp)
 {
-	out << med.to_stringM(); 
-	return out;
+		out << hosp.to_stringH();
+		return out;
 }
 
-ostream& operator<<(ostream& out, cPacientes& _Pac)
-{
-	out << _Pac.to_stringpac();
-	return out;
-}
+
+

@@ -19,9 +19,9 @@ public:
 	string get_Matric();//USADA
 	cMedicos& operator=(const cMedicos& acopiar);//USADA
 	void set_Matricula(string mat);
-	string to_stringM();//USADA
+	string to_stringM() const;//USADA
 	void ImprimirM();//USADA
-
+	friend ostream& operator<<(ostream& out, const cMedicos& med);
 
 protected:
 	string Matricula;

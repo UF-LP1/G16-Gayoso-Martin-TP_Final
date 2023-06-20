@@ -97,5 +97,9 @@ void cOrtopedia::operator-(cProtesis& prot)
 	this->quitar_Protesis_delStock(prot);
 }
 
-
-
+ostream& operator<<(ostream& out,  cOrtopedia& ort)
+{
+		out << ort.get_Nombre() << ort.get_Direc() << endl;
+		return out;
+	
+}

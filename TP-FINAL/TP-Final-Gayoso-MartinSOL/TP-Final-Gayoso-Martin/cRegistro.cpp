@@ -86,7 +86,7 @@ cHospital cRegistro::get_hosp()
     return this->Hospital;
 }
 
-string cRegistro::to_stringR()
+string cRegistro::to_stringR() const
 {
     stringstream salida;
     salida << "Fecha de Entrega:" << this->Fecha_Entrega.to_stringF()
@@ -107,7 +107,10 @@ void cRegistro::imprimirR()
 
 }
 
+ostream& operator<<(ostream& out, const cRegistro& reg)
+{
+    
+        out << reg.to_stringR();
+        return out;
 
-
-
-
+}

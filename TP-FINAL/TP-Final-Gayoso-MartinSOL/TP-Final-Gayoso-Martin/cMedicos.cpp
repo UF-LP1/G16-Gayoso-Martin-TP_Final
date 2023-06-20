@@ -128,7 +128,7 @@ void cMedicos::set_Matricula(string mat)
 {
 	this->Matricula = mat;
 }
-std::string cMedicos::to_stringM()
+std::string cMedicos::to_stringM() const
 {
 	stringstream salida;
 	salida << "Nombre del Medico: " << this->nombre << "Apellido del Medico: " << this->apellido << "ID del Medico: " << this->ID << "Matricula del Medico: " << this->Matricula;
@@ -138,4 +138,12 @@ std::string cMedicos::to_stringM()
 void cMedicos::ImprimirM()
 {
 	cout << this->to_stringM() << endl;
+}
+
+ostream& operator<<(ostream& out, const cMedicos& med)
+{
+	
+		out << med.to_stringM();
+		return out;
+	
 }

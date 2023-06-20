@@ -21,7 +21,7 @@ public:
 	void agregar_Stock(cProtesis &_Protesis);//USADA
 	void quitar_Protesis_delStock(cProtesis& _Protesis);//USADA
 	
-
+	friend ostream& operator<<(ostream& out, cOrtopedia& ort);
 
  void operator-(cProtesis& prot);//USADA
 

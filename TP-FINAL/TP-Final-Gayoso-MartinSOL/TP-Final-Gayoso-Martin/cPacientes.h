@@ -19,7 +19,7 @@ public:
 	
 	bool operator==(const cPacientes& pac)const ;
 	cPacientes &operator=(const cPacientes& acopiar);
-
+	friend ostream& operator<<(ostream& out, const cPacientes& _Pac);
 
 	/*cFechass get_FechaNac();
 	string get_Tel();
@@ -41,7 +41,7 @@ public:
 	void set_MatriculaMed(string Mat);//Usada
 	
 	
-	string to_stringpac();//USADA
+	string to_stringpac() const;//USADA
 	void Imprimirpac();
 
 	static int cant_pacientes;

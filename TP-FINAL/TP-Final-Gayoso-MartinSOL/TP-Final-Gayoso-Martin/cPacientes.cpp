@@ -129,7 +129,7 @@ void cPacientes::set_MatriculaMed(string Mat)
 	this->MatriculadelMed = Mat;
 }
 
-string cPacientes::to_stringpac()
+string cPacientes::to_stringpac() const
 {
 	stringstream salida;
 	salida << "Nombre del Paciente: " << this->nombre << "Apellido del Paciente: " << this->apellido 
@@ -156,7 +156,10 @@ cPacientes::~cPacientes()
 	cant_pacientes--;
 }
 
-
-
-
-
+ostream& operator<<(ostream& out, const cPacientes& _Pac)
+{
+	
+		out << _Pac.to_stringpac();
+		return out;
+	
+}

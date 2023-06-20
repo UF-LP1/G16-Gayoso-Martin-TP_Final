@@ -26,11 +26,12 @@ public:
 	cHospital& operator=(const cHospital &acopiar);
 	//bool operator==(cHospital& hosp);
 
-	string to_stringH();//USADA
+	string to_stringH()const ;//USADA
 	void ImprimirH();//USADA
 
-	friend ostream& operator<<(ostream& out, cMedicos& med);
-	friend ostream& operator<<(ostream& out, cPacientes& _Pac);
+	friend ostream& operator<<(ostream& out, const cHospital& hosp);
+	
+	
 protected:
 	list<cMedicos> Lista_Medicos;
 	list<cPacientes> Lista_Pacientes;

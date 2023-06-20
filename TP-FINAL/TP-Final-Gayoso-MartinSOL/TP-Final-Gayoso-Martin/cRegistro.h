@@ -28,7 +28,8 @@ public:
 	cMedicos get_med();//USADO
 	cHospital get_hosp();//USADO
 	
-	string to_stringR();//USADO
+	friend ostream& operator<<(ostream& out, const cRegistro& reg);
+	string to_stringR() const;//USADO
 	void imprimirR();//USADO
 
 protected:

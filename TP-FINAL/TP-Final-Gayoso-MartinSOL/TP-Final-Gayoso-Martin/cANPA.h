@@ -29,9 +29,9 @@ public:
 	void Imprimir_Registro();//USADA
 	void Imprimir_Hospitales();//USADA
 
-	friend ostream& operator<<(ostream& out, cHospital& hosp);
-	friend ostream& operator<<(ostream& out, cOrtopedia& ort);
-	friend ostream& operator<<(ostream& out, cRegistro& reg);
+	//friend ostream& operator<<(ostream& out, const cHospital& hosp);
+	//friend ostream& operator<<(ostream& out, cOrtopedia& ort);
+	//friend ostream& operator<<(ostream& out, cRegistro& reg);
 
 protected:
 	list<cOrtopedia> Lista_Ortopedias;
