@@ -2,6 +2,7 @@
 #include "cEstablecimiento.h"
 #include <list>
 #include "cPacientes.h"
+using namespace std;
 class cOrtopedia: public cEstablecimiento
 {
 public:

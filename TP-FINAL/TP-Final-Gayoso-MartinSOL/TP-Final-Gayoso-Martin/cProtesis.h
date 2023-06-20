@@ -27,7 +27,7 @@ public:
 	virtual string to_stringP();
 	virtual void imprimirP();
 
-	virtual bool operator==(const cProtesis& prots);
+	
 
 	
 
@@ -50,4 +50,12 @@ ostream& operator<<(ostream& out, cProtesis& prot)
 		prot.get_Fecha_Fab().get_dia() << prot.get_Fecha_Fab().get_mes() << prot.get_Fecha_Fab().get_anio() << prot.get_Fabricante().get_Direc()
 		<< prot.get_Fabricante().get_Nombre() << prot.get_Fabricante().get_Nro_Hab() << prot.get_Fabricante().get_Sol() << endl;
 	return out;
+}
+bool operator==(cProtesis& prots, cProtesis& pro)
+{
+	if (pro.get_Der_Izq() == prots.get_Der_Izq() && pro.get_Sup_Inf() == prots.get_Sup_Inf())
+		return true;
+
+	else
+		return false;
 }

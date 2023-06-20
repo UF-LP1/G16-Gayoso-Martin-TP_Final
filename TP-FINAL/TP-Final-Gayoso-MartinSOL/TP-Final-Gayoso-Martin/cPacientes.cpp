@@ -17,10 +17,10 @@ cPacientes::cPacientes(string id,string Nom, string app, cProtesis& prot, Alergi
 }
 
 
-bool cPacientes::operator==(const cPacientes& pac) const 
+bool cPacientes::operator==(const cPacientes& pac)const 
 {
 
-	return (this->ID == pac.ID && this->Prot_Necesitada == pac.Prot_Necesitada);
+	return(this->ID == pac.ID && this->Prot_Necesitada == pac.Prot_Necesitada);
 }
 
 cPacientes& cPacientes::operator=(const cPacientes& acopiar)

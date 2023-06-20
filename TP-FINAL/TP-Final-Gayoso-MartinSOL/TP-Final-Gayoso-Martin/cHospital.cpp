@@ -97,7 +97,7 @@ cHospital& cHospital::operator=(const cHospital& acopiar)
 	
 	return *this;
 }
-
+//
 //bool cHospital::operator==(cHospital& hosp)
 //{
 //	if (this->Direc == hosp.Direc && this->Nombre == hosp.Nombre)

@@ -71,15 +71,15 @@
 		cout << this->to_stringP() << endl;
 	}
 
-	bool cProtesis::operator==(const cProtesis& prots)
+	/*bool cProtesis::operator==( cProtesis& prots, cProtesis& pro)  
 	{
-		if (this->Der_Izq == prots.Der_Izq && this->Sup_Inf == prots.Sup_Inf) {
+		if (pro.get_Der_Izq() == prots.get_Der_Izq() && pro.get_Sup_Inf() == prots.get_Sup_Inf())
 			return true;
-		}
+
 		else
 			return false;
-		
-	}
+
+	}*/
 
 
 

@@ -37,23 +37,26 @@ void cNoQuirurgicas::set_Ancho(float Anch)
 	this->Ancho = Anch;
 }
 
-bool cNoQuirurgicas::operator==(const cNoQuirurgicas& cNQ)const
+const float cNoQuirurgicas::get_Radio()const
 {
-	if (this->Der_Izq == cNQ.get_Der_Izq() && this->Sup_Inf == cNQ.get_Sup_Inf()) {
-/*
-				 cNoQuirurgicas* CNQ = dynamic_cast<cNoQuirurgicas*>(&prots);
-				if (CNQ != NULL)
-				{
-				*/	if (this->Radio == cNQ.Radio && this->Largo == cNQ.Largo && this->Ancho == cNQ.Ancho)
-					{
-						return true; 
-					}	
-		
-				//}
-		}
-			else
-				return false;  
+	return this->Radio;
 }
+
+const float cNoQuirurgicas::get_Ancho()const
+{
+	return this->Ancho;
+}
+
+const float cNoQuirurgicas::get_Largo()const
+{
+	return this->Largo;
+}
+
+//bool cNoQuirurgicas::operator==( cNoQuirurgicas& cNQ)
+//{
+//	return (this->Der_Izq == cNQ.get_Der_Izq() && this->Sup_Inf == cNQ.get_Sup_Inf() && this->Radio == cNQ.Radio && this->Largo == cNQ.Largo && this->Ancho == cNQ.Ancho);
+//					
+//}
 
 
 

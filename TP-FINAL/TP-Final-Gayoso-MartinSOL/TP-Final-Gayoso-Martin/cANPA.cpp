@@ -21,13 +21,10 @@ bool cANPA::BuscarPorOrtopedia(cPacientes Pacs)
        {
            return true;
        }
-       else
-       {
-           it++;
-       }
-       
+      
+           it++;    
     }
-       if(var==false)
+       
          return false;
 }
 
@@ -60,6 +57,7 @@ cPacientes cANPA::buscar_Hosp(cHospital hosp)
             return *it;
         it++;
     }
+    return *it;
     //if (it == Lista_Pacientes.end())
         //return Lista_Pacientes.end(); //te devuelve el ultimo de la lista hacer excepcion
 }

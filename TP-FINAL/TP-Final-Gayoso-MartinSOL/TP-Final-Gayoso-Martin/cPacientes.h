@@ -15,7 +15,7 @@ public:
 	~cPacientes();
 	
 	
-	bool operator==(const cPacientes& pac) const;
+	bool operator==(const cPacientes& pac)const ;
 	cPacientes &operator=(const cPacientes& acopiar);
 
 
