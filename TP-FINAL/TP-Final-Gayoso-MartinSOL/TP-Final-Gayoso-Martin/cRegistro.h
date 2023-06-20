@@ -14,20 +14,20 @@ public:
 	cRegistro(cHospital hosp, cMedicos medic, cProtesis *prot, cPacientes Paciente, cFechass fecha_e, cFechass fecha_s);
 	~cRegistro();
 
-	void setHosp(cHospital hosp);
-	void setMedico(cMedicos med);
-	void setPac(cPacientes pacs);
-	void setProt(cProtesis *prot);
-	void setFechaS(cFechass FS);
+	void setHosp(cHospital hosp);//USADO
+	void setMedico(cMedicos med);//USADO
+	void setPac(cPacientes pacs);//USADO
+	void setProt(cProtesis *prot);//USADO
+	void setFechaS(cFechass FS);//USADO
 	unsigned int generarFechaEst();
-	cFechass generarFechaE();
-	cFechass get_FechaSol();
-	cPacientes get_pac();
-	cMedicos get_med();
-	cHospital get_hosp();
+	cFechass generarFechaE();//USADO
+	cFechass get_FechaSol();//USADO
+	cPacientes get_pac();//USADO
+	cMedicos get_med();//USADO
+	cHospital get_hosp();//USADO
 	
-	string to_stringR();
-	void imprimirR();
+	string to_stringR();//USADO
+	void imprimirR();//USADO
 
 protected:
 	cHospital Hospital;

@@ -11,13 +11,13 @@ public:
 	void set_Largo(float Larg);//USADO
 	void set_Ancho(float Anch);//USADO
 
-	const float get_Radio()const;
-	const float get_Ancho()const;
-	const float get_Largo()const;
+	const float get_Radio()const;//USADOS
+	const float get_Ancho()const;//USADOS
+	const float get_Largo()const;//USADOS
 	 
 	friend ostream& operator<<(ostream& out, cNoQuirurgicas& NQ);
-	string to_stringP();
-	void imprimirP();
+	string to_stringP();//USADO
+	void imprimirP();//USADO
 protected:
 	float Radio;
 	float Largo;

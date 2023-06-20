@@ -11,12 +11,12 @@ public:
 	void set_Sup_Inf(bool SF); //USADAS
 	void set_Der_Izq(bool DI);//USADAS
 	void set_Mat(string Mat);//USADAS
-	const string getMat()const;
+	const string getMat()const; //usadaa
 	
 	void Agregar_Mat(vector<string> Mats); //USADAS
 	friend ostream& operator<<(ostream& out, cQuirurgicas& CQ);
-	string to_stringP();
-	void imprimirP();
+	string to_stringP();//USADA
+	void imprimirP();//USADAS
 protected:
 	string Material;
 	

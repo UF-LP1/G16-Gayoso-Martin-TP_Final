@@ -26,7 +26,7 @@ void cFabricante::set_Nro_Hab(unsigned int nh)
 	this->Nro_Habilitacion = nh;
 }
 
-void cFabricante::set_Sol(bool sol)
+void cFabricante::set_Sol(bool& sol)
 {
 	sol= false; {}
 

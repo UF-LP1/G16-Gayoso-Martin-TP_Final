@@ -5,7 +5,7 @@ cOrtopedia::cOrtopedia(string _Nombre, string _Direc):cEstablecimiento(_Nombre, 
 	this->Lista_Protesis.clear();
 	this->Lista_Stock.clear();
 }
-
+ 
 cOrtopedia::~cOrtopedia()
 {
 }
@@ -19,6 +19,7 @@ bool cOrtopedia::Buscar_Prot(cPacientes _paciente)
 	{
 		if (*_paciente.get_Prot_Nec() == *it)
 		{
+			
 			this->quitar_Protesis_delStock(*it);//para sacarla del stock
 			return true;
 		}
@@ -33,6 +34,11 @@ bool cOrtopedia::Buscar_Prot(cPacientes _paciente)
 	}
 	if (it == Lista_Stock.end())
 		return false;
+
+	if (var == false && it == Lista_Stock.end())
+	{
+		throw NotFound();
+	}
 
 }
 

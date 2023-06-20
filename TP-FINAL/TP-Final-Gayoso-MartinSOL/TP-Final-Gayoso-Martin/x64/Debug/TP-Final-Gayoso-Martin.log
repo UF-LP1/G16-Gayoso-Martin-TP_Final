@@ -1,15 +1,10 @@
-﻿  cANPA.cpp
-  cHospital.cpp
-  cMedicos.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(23,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  cNoQuirurgicas.cpp
-  cOrtopedia.cpp
+﻿  cOrtopedia.cpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,1): error C2678: '==' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'const _Ty' (o bien no existe una conversión aceptable)
           with
           [
               _Ty=cProtesis
           ]
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(54,6): message : puede ser 'bool operator ==(cProtesis &,cProtesis &)' [se encontró con la búsqueda dependiente de argumentos]
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(48,6): message : puede ser 'bool operator ==(cProtesis &,cProtesis &)' [se encontró con la búsqueda dependiente de argumentos]
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,1): message : al hacer coincidir la lista de argumentos '(const _Ty, const _Ty)'
           with
           [
@@ -20,7 +15,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.3110
           [
               _Ty=cProtesis
           ]
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(26): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<cProtesis,std::allocator<cProtesis>>" que se está compilando
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(27): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<cProtesis,std::allocator<cProtesis>>" que se está compilando
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1597,1): error C2451: una expresión condicional de tipo "void" no es válida
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1597,22): message : Las expresiones de tipo void no se pueden convertir en otros tipos
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586): message : Vea la referencia a la creación de una instancia de la función plantilla "auto std::list<cProtesis,std::allocator<cProtesis>>::remove_if<std::list<cProtesis,std::allocator<cProtesis>>::remove::<lambda_a30b751dddf1337e792daf429d6d69e4>>(_Pr1)" que se está compilando
@@ -29,8 +24,6 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.3110
               _Pr1=std::list<cProtesis,std::allocator<cProtesis>>::remove::<lambda_a30b751dddf1337e792daf429d6d69e4>
           ]
   cPacientes.cpp
-  cQuirurgicas.cpp
-  cRegistro.cpp
   Funciones.cpp
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(20,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(21,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
@@ -40,6 +33,12 @@ C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\T
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(31,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(35,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(36,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(142,149): error C2664: 'cPacientes::cPacientes(std::string,std::string,std::string,cProtesis &,Alergias,Miembros,cFechass)': el argumento 7 no puede convertirse de 'cFechass *(__cdecl *)(void)' a 'cFechass'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(142,149): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cPacientes.h(14,2): message : vea la declaración de 'cPacientes::cPacientes'
   main.cpp
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(47,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(48,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(54,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(55,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Generando código...
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.cpp(85): warning C4715: 'cHospital::BuscarPorMat': no todas las rutas de acceso de control devuelven un valor

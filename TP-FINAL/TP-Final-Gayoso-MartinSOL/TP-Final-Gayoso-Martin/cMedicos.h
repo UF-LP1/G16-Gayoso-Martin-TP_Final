@@ -5,6 +5,7 @@
 #include <ctime>
 #include "cNoQuirurgicas.h"
 #include "cQuirurgicas.h"
+#include"Funciones.h"
 using namespace std;  
 
 class cMedicos : public cPersonas
@@ -13,12 +14,12 @@ public:
 	cMedicos(string id,string Nom, string app);
 	~cMedicos();  
 
-	void AsignarProtesis(cPacientes & _paciente, unsigned int k);
-	string get_Matric();
-	cMedicos& operator=(const cMedicos& acopiar);
+	void AsignarProtesis(cPacientes & _paciente, unsigned int k);//USADA
+	string get_Matric();//USADA
+	cMedicos& operator=(const cMedicos& acopiar);//USADA
 
-	string to_stringM();
-	void ImprimirM();
+	string to_stringM();//USADA
+	void ImprimirM();//USADA
 
 
 protected:

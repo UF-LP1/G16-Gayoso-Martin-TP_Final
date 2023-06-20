@@ -14,23 +14,20 @@ public:
 	cProtesis(cFabricante &fabricante, cFechass fecha, cFechass fecha_s);
 	~cProtesis();
 
-	cFechass get_Fecha_Fab();
-	cFabricante get_Fabricante();
-	const bool get_Sup_Inf()const;
-	const bool get_Der_Izq()const ;
-	cFechass get_FechaSol();
+	cFechass get_Fecha_Fab();//USADA
+	cFabricante get_Fabricante(); // USADA
+	const bool get_Sup_Inf()const;// USADA
+	const bool get_Der_Izq()const ;// USADA
+	cFechass get_FechaSol();// USADA
 
-	void set_Fecha_Fab(cFechass FF);
-	void set_Fecha_Sol(cFechass FS);
-	virtual void set_Sup_Inf(bool SF);
-	virtual void set_Der_Izq(bool DI);
-	virtual string to_stringP();
+	void set_Fecha_Fab(cFechass FF);// USADA
+	void set_Fecha_Sol(cFechass FS);// USADA
+	virtual void set_Sup_Inf(bool SF);// USADA
+	virtual void set_Der_Izq(bool DI);// USADA
+	virtual string to_stringP();// USADA
 	virtual void imprimirP();
 
 	
-
-	
-
 protected:
 	
 	cFechass Fecha_Fabric; 
@@ -45,10 +42,7 @@ protected:
  
 ostream& operator<<(ostream& out, cProtesis& prot)
 {
-	//out<<_Prot.to_stringP()
-	out << prot.get_Der_Izq() << prot.get_Sup_Inf() << prot.get_FechaSol().get_dia() << prot.get_FechaSol().get_mes() << prot.get_FechaSol().get_anio() <<
-		prot.get_Fecha_Fab().get_dia() << prot.get_Fecha_Fab().get_mes() << prot.get_Fecha_Fab().get_anio() << prot.get_Fabricante().get_Direc()
-		<< prot.get_Fabricante().get_Nombre() << prot.get_Fabricante().get_Nro_Hab() << prot.get_Fabricante().get_Sol() << endl;
+	out << prot.to_stringP();
 	return out;
 }
 bool operator==(cProtesis& prots, cProtesis& pro)

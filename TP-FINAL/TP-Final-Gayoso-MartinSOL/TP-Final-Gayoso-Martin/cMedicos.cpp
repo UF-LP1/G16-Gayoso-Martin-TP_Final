@@ -45,11 +45,11 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 	
 	cFechass FechaSol(tiempo.tm_mday, tiempo.tm_mon + 1, tiempo.tm_year + 1900);
 
-	_paciente.get_Prot_Nec()->set_Fecha_Sol(FechaSol);//le tenemos que pasar una variable fecha
+	_paciente.get_Prot_Nec()->set_Fecha_Sol(FechaSol);
 
 	_paciente.get_Prot_Nec()->set_Fecha_Fab(FechaSol);
 	
-	//this->Fecha_Entrega = this->Fecha_Sol;
+	
 	unsigned int vark = 0;
 
 	var = rand() % (15 - 10);
@@ -98,7 +98,7 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 			CNQ->set_Radio(_paciente.get_Radio_Amput());
 			aux = 0;
 			aux = rand() % (4 - 0);
-
+			Switch(_paciente, k, *CNQ);
 
 			_paciente.set_Protesis_Nec(*CNQ);
 		

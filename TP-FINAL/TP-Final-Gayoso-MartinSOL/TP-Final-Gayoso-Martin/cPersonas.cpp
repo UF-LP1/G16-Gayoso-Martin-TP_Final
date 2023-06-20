@@ -8,17 +8,17 @@ cPersonas::~cPersonas()
 {
 }
 
-string cPersonas::get_ID()
-{
-	return this->ID ;
-}
-
+//string cPersonas::get_ID()
+//{
+//	return this->ID ;
+//}
+//
 string cPersonas::get_nombre()
 {
-	return this->nombre ;
+	return this->nombre ;//USADSO
 }
-
-string cPersonas::get_apellido()
-{
-	return this->apellido;
-}
+//
+//string cPersonas::get_apellido()
+//{
+//	return this->apellido;
+//}

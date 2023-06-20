@@ -19,14 +19,14 @@ public:
 	cPacientes &operator=(const cPacientes& acopiar);
 
 
-	cFechass get_FechaNac();
+	/*cFechass get_FechaNac();
 	string get_Tel();
-	string get_Nombre_Hosp();
-	float  get_Radio_Amput();
+	string get_Nombre_Hosp();*/
+	float  get_Radio_Amput();//USADA
 	cProtesis* get_Prot_Nec();//USADA
-	Alergias get_Alergias();
-	Miembros get_Miembro();
-	string get_Mat();
+	Alergias get_Alergias();//USADA
+	//Miembros get_Miembro();
+	string get_Mat();//USADA
 	
 	void CrearPac(string T,string NH,float RA);
 

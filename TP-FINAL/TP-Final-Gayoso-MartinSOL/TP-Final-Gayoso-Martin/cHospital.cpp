@@ -28,6 +28,8 @@ void cHospital::Agregar_Pac(cPacientes NewPac)
 	{
 		Lista_Pacientes.push_back(NewPac);
 	}
+	if (Pac_Registrado == true && it == Lista_Pacientes.end())
+		throw NoAgregado();
 	
 	
 }
@@ -59,7 +61,15 @@ void cHospital::Imprimir_Med()
 
 void cHospital::operator+(cPacientes& pac)
 {
-	this->Agregar_Pac(pac);   
+	try
+	{
+		this->Agregar_Pac(pac);
+	}
+	catch (const std::exception&e)
+	{
+		throw NoAgregado();
+	}
+	
 }
 
 void cHospital::operator+(cMedicos& Med)
@@ -80,6 +90,7 @@ cMedicos cHospital::BuscarPorMat()
 				return *itm;
 			}
 		}
+		itm= Lista_Medicos.begin();
 	}
 //no hacemos excepcion aca porque si o si tiene que haber un medico si no nadie podria haverle seteado una matricula al paciente
 }

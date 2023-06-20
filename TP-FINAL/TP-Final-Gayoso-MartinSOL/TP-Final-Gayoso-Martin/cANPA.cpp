@@ -16,14 +16,26 @@ bool cANPA::BuscarPorOrtopedia(cPacientes Pacs)
     bool var=false;
    while( it != Lista_Ortopedias.end())
     {
-       var= (it)->Buscar_Prot(Pacs);
+       try
+       {
+           var = (it)->Buscar_Prot(Pacs);
+       }
+       catch (const std::exception&)
+       {
+           throw NotFound();
+       }
+       
        if (var == true)
        {
            return true;
        }
       
            it++;    
-    }
+   }
+   
+   
+      
+   
        
          return false;
 }
@@ -37,13 +49,23 @@ void cANPA::Guardar_en_Registro()
     {
         for (ith; ith != Lista_Hosp_Registrados.end(); ith++)
         {
+           
             itr->setHosp(*ith);
             itr->setMedico(ith->BuscarPorMat());
-            itr->setPac(this->buscar_Hosp(*ith));
-            itr->setProt(this->buscar_Hosp(*ith).get_Prot_Nec());//como la funcion buscar_hosp te devuelve un paciente, desde el paciente que te devuelve pedis la protesis
-           
-            itr->setFechaS(this->buscar_Hosp(*ith).get_Prot_Nec()->get_FechaSol());
-            itr->generarFechaE();
+            try
+            {
+                itr->setPac(this->buscar_Hosp(*ith));
+                itr->setProt(this->buscar_Hosp(*ith).get_Prot_Nec());//como la funcion buscar_hosp te devuelve un paciente, desde el paciente que te devuelve pedis la protesis
+
+                itr->setFechaS(this->buscar_Hosp(*ith).get_Prot_Nec()->get_FechaSol());
+                itr->generarFechaE();
+            }
+            catch (const std::exception&e)
+            {
+                throw NotFound();
+
+            }
+            
         }
     }
 }
@@ -57,9 +79,12 @@ cPacientes cANPA::buscar_Hosp(cHospital hosp)
             return *it;
         it++;
     }
+    if (it == hosp.Lista_Pacientes.end())
+    {
+        throw NotFound();
+    }
     return *it;
-    //if (it == Lista_Pacientes.end())
-        //return Lista_Pacientes.end(); //te devuelve el ultimo de la lista hacer excepcion
+
 }
 
 void cANPA::Agregar_Ortopedias(cOrtopedia& c)

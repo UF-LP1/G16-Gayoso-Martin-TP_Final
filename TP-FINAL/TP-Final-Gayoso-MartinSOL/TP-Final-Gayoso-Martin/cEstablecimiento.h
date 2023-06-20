@@ -9,8 +9,8 @@ public:
 	cEstablecimiento(string _Nombre, string _Direc);
 	~cEstablecimiento();
 	
-	string get_Nombre();
-	string get_Direc();
+	string get_Nombre();//USADA
+	string get_Direc();//USADA
 
 
 

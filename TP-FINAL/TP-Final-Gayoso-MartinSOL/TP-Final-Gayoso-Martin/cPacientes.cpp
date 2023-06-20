@@ -41,20 +41,20 @@ cPacientes& cPacientes::operator=(const cPacientes& acopiar)
 	return *this;
 }
 
-cFechass cPacientes::get_FechaNac()
-{
-	return this->Fecha_Nac;
-}
-
-string cPacientes::get_Tel()
-{
-	return this->Telefono;
-}
-
-string cPacientes::get_Nombre_Hosp()
-{
-	return this->Nombre_Hosp;
-}
+//cFechass cPacientes::get_FechaNac()
+//{
+//	return this->Fecha_Nac;
+//}
+//
+//string cPacientes::get_Tel()
+//{
+//	return this->Telefono;
+//}
+//
+//string cPacientes::get_Nombre_Hosp()
+//{
+//	return this->Nombre_Hosp;
+//}
 
 float cPacientes::get_Radio_Amput()
 {
@@ -71,10 +71,10 @@ Alergias cPacientes::get_Alergias()
 	return this->Alergia;
 }
 
-Miembros cPacientes::get_Miembro()
-{
-	return this->MiembroProtesis;
-}
+//Miembros cPacientes::get_Miembro()
+//{
+//	return this->MiembroProtesis;
+//}
 
 string cPacientes::get_Mat()
 {
