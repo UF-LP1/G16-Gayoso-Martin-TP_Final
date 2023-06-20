@@ -1,15 +1,27 @@
 ﻿  cANPA.cpp
 C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.cpp(63,42): warning C4101: 'e': variable local sin referencia
+  cFechass.cpp
+  cHospital.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.cpp(68,31): warning C4101: 'e': variable local sin referencia
+  cMedicos.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(23,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  cNoQuirurgicas.cpp
   cOrtopedia.cpp
+  cPacientes.cpp
+  cProtesis.cpp
+  cQuirurgicas.cpp
   cRegistro.cpp
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(92,57): error C2662: 'std::string cFechass::to_stringF(void)': no se puede convertir el puntero 'this' de 'const cFechass' a 'cFechass &'
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(92,42): message : Se pierden calificadores en la conversión
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cFechass.h(29,9): message : vea la declaración de 'cFechass::to_stringF'
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(92,57): message : al hacer coincidir la lista de argumentos '()'
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(94,67): error C2662: 'std::string cFechass::to_stringF(void)': no se puede convertir el puntero 'this' de 'const cFechass' a 'cFechass &'
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(94,56): message : Se pierden calificadores en la conversión
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cFechass.h(29,9): message : vea la declaración de 'cFechass::to_stringF'
-C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cRegistro.cpp(94,67): message : al hacer coincidir la lista de argumentos '()'
+  Funciones.cpp
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(20,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(20,24): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(21,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(25,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(25,24): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(26,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(30,24): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(31,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(35,24): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(36,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   main.cpp
 C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(48,18): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(49,18): warning C4305: 'argumento': truncamiento de 'double' a 'float'
@@ -17,3 +29,5 @@ C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programac
 C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(56,18): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Generando código...
 C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(43): warning C4715: 'cOrtopedia::Buscar_Prot': no todas las rutas de acceso de control devuelven un valor
+C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.cpp(96): warning C4715: 'cHospital::BuscarPorMat': no todas las rutas de acceso de control devuelven un valor
+  TP-Final-Gayoso-Martin.vcxproj -> C:\Users\LENOVO\Desktop\Favaloro\2°año\1 cuatrimestre\laboratorio de programacion 1\TP FINAL\TP-FINAL\TP-Final-Gayoso-MartinSOL\x64\Debug\TP-Final-Gayoso-Martin.exe

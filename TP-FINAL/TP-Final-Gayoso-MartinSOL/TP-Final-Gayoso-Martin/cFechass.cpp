@@ -43,7 +43,7 @@ void cFechass::set_anio(int a)
 	this->anio = a;
 }
 
-string cFechass::to_stringF()
+string cFechass::to_stringF() const 
 {
 	stringstream salida;
 	salida << "Dia: " << this->dia << "Mes: " << this->mes << "Anyo: " << this->anio; 

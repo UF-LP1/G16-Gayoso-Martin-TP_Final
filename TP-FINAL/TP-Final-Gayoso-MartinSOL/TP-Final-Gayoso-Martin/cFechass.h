@@ -26,7 +26,7 @@ public:
 	friend class cRegistro;
 	friend class cPacientes;
 
-	string to_stringF();//USADA
+	string to_stringF() const;//USADA
 	void imprimirF();
 	
 	//cFechass& operator=(const cFechass& otro);
