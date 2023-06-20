@@ -52,7 +52,7 @@ void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 	
 	unsigned int vark = 0;
 
-	var = rand() % (15 - 10);
+	vark = rand() % (15 - 10);
 	tm FechaE = {};
 	FechaE.tm_mday = _paciente.get_Prot_Nec()->get_Fecha_Fab().get_dia();
 	FechaE.tm_mon = _paciente.get_Prot_Nec()->get_Fecha_Fab().get_mes() - 1;
