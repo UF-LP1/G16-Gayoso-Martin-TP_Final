@@ -82,14 +82,19 @@ void cOrtopedia::quitar_Protesis_delStock(cProtesis &_Protesis)
 {
 	list<cProtesis>::iterator it = Lista_Stock.begin();
 	
-	for(it; it != Lista_Stock.end(); it++)
+	while (it != Lista_Stock.end())
 	{
 		if (*it == _Protesis)
 		{
-			 Lista_Protesis.erase(it);
+			it = Lista_Stock.erase(it); // Elimina el elemento de la lista y actualiza el iterador
+			return; // Sale de la función después de eliminar la primera ocurrencia
 		}
-		
+		else
+		{
+			++it; // Avanza al siguiente elemento si no es igual
+		}
 	}
+	
 }
 
 void cOrtopedia::operator-(cProtesis& prot)
