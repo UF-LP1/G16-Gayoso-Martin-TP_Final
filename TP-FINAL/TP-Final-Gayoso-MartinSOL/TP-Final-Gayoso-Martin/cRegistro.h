@@ -13,7 +13,7 @@ using namespace std;
 class cRegistro
 {
 public:
-	cRegistro(cHospital hosp, cMedicos medic, cProtesis *prot, cPacientes Paciente, cFechass fecha_e, cFechass fecha_s);
+	cRegistro(cHospital hosp, cMedicos medic, cProtesis* prot, cPacientes Paciente, cFechass fecha_e, cFechass fecha_s);
 	~cRegistro();
 
 	void setHosp(cHospital hosp);//USADO
@@ -21,7 +21,7 @@ public:
 	void setPac(cPacientes pacs);//USADO
 	void setProt(cProtesis *prot);//USADO
 	void setFechaS(cFechass FS);//USADO
-	unsigned int generarFechaEst();
+	unsigned int generarFechaEst(); 
 	cFechass generarFechaE();//USADO
 	cFechass get_FechaSol();//USADO
 	cPacientes get_pac();//USADO
@@ -35,7 +35,7 @@ public:
 protected:
 	cHospital Hospital;
 	cMedicos Medico;
-	cProtesis *P_Ort;
+	cProtesis* P_Ort;
 	cPacientes Paciente;
 	cFechass Fecha_Sol;
 	unsigned int Fecha_EstE;

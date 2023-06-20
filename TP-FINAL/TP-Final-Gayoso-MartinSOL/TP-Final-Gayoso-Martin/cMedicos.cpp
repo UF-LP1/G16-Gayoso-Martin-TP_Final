@@ -16,7 +16,7 @@ cMedicos::~cMedicos()
 
 void cMedicos::AsignarProtesis(cPacientes& _paciente, unsigned int k)
 {
-	//srand((unsigned) time(NULL));
+	
 	
 	bool var=false;{} 
 
@@ -131,7 +131,7 @@ void cMedicos::set_Matricula(string mat)
 std::string cMedicos::to_stringM() const
 {
 	stringstream salida;
-	salida << "Nombre del Medico: " << this->nombre << "Apellido del Medico: " << this->apellido << "ID del Medico: " << this->ID << "Matricula del Medico: " << this->Matricula;
+	salida << "Nombre del Medico: " << this->nombre << " ,Apellido del Medico: " << this->apellido << " ,ID del Medico: " << this->ID << "  ,Matricula del Medico: " << this->Matricula<<endl;
 	return salida.str();
 }
 

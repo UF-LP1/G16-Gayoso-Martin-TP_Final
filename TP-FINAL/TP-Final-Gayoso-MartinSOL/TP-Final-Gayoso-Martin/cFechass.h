@@ -29,7 +29,7 @@ public:
 	string to_stringF() const;//USADA
 	void imprimirF();
 	
-	//cFechass& operator=(const cFechass& otro);
+	
 };
 
 #endif

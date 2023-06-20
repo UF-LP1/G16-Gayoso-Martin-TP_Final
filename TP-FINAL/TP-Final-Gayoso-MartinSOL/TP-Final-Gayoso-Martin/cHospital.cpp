@@ -108,23 +108,13 @@ cHospital& cHospital::operator=(const cHospital& acopiar)
 	
 	return *this;
 }
-//
-//bool cHospital::operator==(cHospital& hosp)
-//{
-//	if (this->Direc == hosp.Direc && this->Nombre == hosp.Nombre)
-//		return true;
-//	else
-//	{
-//		return false;
-//	}
-//	
-//}
+
 
 
 std:: string cHospital::to_stringH() const
 {
 	stringstream salida;
-	salida << "Nombre del Hospital: " << this->Nombre << "Direccion del Hospital: " << this->Direc;
+	salida << "Nombre del Hospital: " << this->Nombre << " ,Direccion del Hospital: " << this->Direc<<endl; 
 	return salida.str();
 }
 

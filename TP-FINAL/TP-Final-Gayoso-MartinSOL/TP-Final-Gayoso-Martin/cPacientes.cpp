@@ -41,20 +41,6 @@ cPacientes& cPacientes::operator=(const cPacientes& acopiar)
 	return *this;
 }
 
-//cFechass cPacientes::get_FechaNac()
-//{
-//	return this->Fecha_Nac;
-//}
-//
-//string cPacientes::get_Tel()
-//{
-//	return this->Telefono;
-//}
-//
-//string cPacientes::get_Nombre_Hosp()
-//{
-//	return this->Nombre_Hosp;
-//}
 
 float cPacientes::get_Radio_Amput()
 {
@@ -71,14 +57,21 @@ Alergias cPacientes::get_Alergias()
 	return this->Alergia;
 }
 
-//Miembros cPacientes::get_Miembro()
-//{
-//	return this->MiembroProtesis;
-//}
+string cPacientes::get_Tel()
+{
+	return this->Telefono;
+}
+
+
 
 string cPacientes::get_Mat()
 {
 	return this->MatriculadelMed;
+}
+
+string cPacientes::get_Hosp()
+{
+	return this->Nombre_Hosp;
 }
 
 void cPacientes::CrearPac(string T, string NH, float RA)
@@ -86,9 +79,6 @@ void cPacientes::CrearPac(string T, string NH, float RA)
 	this->set_Tel(T);
 	this->set_Nombre_Hosp(NH);
 	this->set_Rad_Amput(RA);
-	
-	//this->set_Alergias(a);
-	//this->set_Miembro(m);
 	
 }
 
@@ -129,20 +119,25 @@ void cPacientes::set_MatriculaMed(string Mat)
 	this->MatriculadelMed = Mat;
 }
 
+void cPacientes::set_Hosp(string h)
+{
+	this->Nombre_Hosp = h;
+}
+
 string cPacientes::to_stringpac() const
 {
 	stringstream salida;
-	salida << "Nombre del Paciente: " << this->nombre << "Apellido del Paciente: " << this->apellido 
-		<< "ID del Paciente: " << this->ID
-		<< "Fecha de Nacimiento del Paciente" << this->Fecha_Nac.dia<<"/" << this->Fecha_Nac.mes<<"/"<< this->Fecha_Nac.anio
-		<< "Numero de Telefono del Paciente: " << this->Telefono 
-		<< "Nombre Hospital: " << this->Nombre_Hosp
-		<< "Tamanyo del Radio de la extremidad Amputada: " << this->Radio_Amput
-		<< "Protesis necesitada: " << this->Prot_Necesitada 
-		<< "La protesis fue conseguida? " << this->ProtesisConseguida
-		<< "Alergias del Paciente: " << this->Alergia
-		<< "Miembro del cual necesita la protesis: " << this->MiembroProtesis
-		<< "Matricula del Medico por el cual fue atendido: " << MatriculadelMed;
+	salida << "Nombre del Paciente: " << this->nombre << " ,Apellido del Paciente: " << this->apellido 
+		<< " ,ID del Paciente: " << this->ID
+		<< " ,Fecha de Nacimiento del Paciente" << this->Fecha_Nac.dia<<"/" << this->Fecha_Nac.mes<<"/"<< this->Fecha_Nac.anio
+		<< " ,Numero de Telefono del Paciente: " << this->Telefono 
+		<<endl<< " ,Nombre Hospital: " << this->Nombre_Hosp
+		<< " ,Tamanyo del Radio de la extremidad Amputada: " << this->Radio_Amput
+		<< " ,Protesis necesitada: " << this->Prot_Necesitada 
+		<< endl << "La protesis fue conseguida? " << this->ProtesisConseguida
+		<< " ,Alergias del Paciente: " << this->Alergia
+		<< " ,Miembro del cual necesita la protesis: " << this->MiembroProtesis
+		<< " ,Matricula del Medico por el cual fue atendido: " << this->MatriculadelMed;
 	return salida.str();
 }
 

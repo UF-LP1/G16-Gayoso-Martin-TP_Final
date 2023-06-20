@@ -46,7 +46,7 @@ void cFechass::set_anio(int a)
 string cFechass::to_stringF() const 
 {
 	stringstream salida;
-	salida << "Dia: " << this->dia << "Mes: " << this->mes << "Anyo: " << this->anio; 
+	salida << "Dia: " << this->dia << " Mes: " << this->mes << " Anyo: " << this->anio; 
 	return salida.str();
 }
 void cFechass::imprimirF()
@@ -56,20 +56,8 @@ void cFechass::imprimirF()
 }
 
 
-//cFechass& cFechass::operator=(const cFechass& otro)
-//{
-//	if (this != &otro)
-//	{
-//		this->dia = otro.dia;
-//		this->mes = otro.mes;
-//		this->anio = otro.anio;
-//	}
-//
-//	return *this;
-//}
 
 std::ostream& operator<<(std::ostream& out, cFechass& fecha)
-{	//out<<fecha.to_stringF();
-	out << fecha.dia << fecha.mes << fecha.anio;
+{	out<<fecha.to_stringF();
 	return out;
 }

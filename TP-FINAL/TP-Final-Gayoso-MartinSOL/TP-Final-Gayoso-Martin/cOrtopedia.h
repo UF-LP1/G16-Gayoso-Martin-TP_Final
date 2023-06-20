@@ -32,11 +32,4 @@ protected:
 
 };
 #endif
-//ostream& operator<<(ostream& out, cProtesis& _Prot)
-//{
-//	//out<<_Prot.to_stringP();
-//	//<< _Prot.get_Fecha_Fab()
-//	out << _Prot.get_Der_Izq() << _Prot.get_Sup_Inf() << endl
-//		<< _Prot.get_Fabricante().get_Nombre() << _Prot.get_Fabricante().get_Direc() << _Prot.get_Fabricante().get_Nro_Hab() << _Prot.get_Fabricante().get_Sol() << endl;
-//	return out;
-//}
+

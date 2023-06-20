@@ -42,11 +42,9 @@ void Switch(cPacientes pac, unsigned int k, cNoQuirurgicas CQN)
 	}
 }
 
-Alergias switch1(unsigned int opcion)
+Alergias switch1( int opcion)
 {
-	Alergias Al;   
-	while (opcion < 1 || opcion>6)
-	{
+	Alergias Al=NOt;   
 		switch (opcion)
 		{
 			 
@@ -68,18 +66,17 @@ Alergias switch1(unsigned int opcion)
 		case 6:
 			Al = NOt;
 			break;
+		default:
+			Al = NOt;
 		}
 
-
-	}
 	return Al;
 }
 
-Miembros switch2(unsigned int op)
+Miembros switch2( int op)
 {
-	Miembros M;
-	while (op < 1 || op>5)
-	{
+	Miembros M=NOHay;
+	
 		switch (op)
 		{
 
@@ -98,10 +95,9 @@ Miembros switch2(unsigned int op)
 		case 5:
 			M = NOHay;
 			break;
+		default:
+			M = NOHay;
 		}
-
-
-	}
 	return M;
 }
 
@@ -129,17 +125,24 @@ cProtesis* ProtesisNecesitada(unsigned int p)
 
 cPacientes* crearPacientes(cProtesis *prot)
 {
-	
-		int randAlergia = rand() % (5 - 1);
-		int randMiembro = rand() % (4 - 1);
+	srand(time(NULL));
+		int k= rand() % 6 + 1;
+		int randMiembro = rand() % (5 +1);
 		string arrayName[5] = { "Camila", "Valentina", "Sol", "Mateo", "Matias" };
 		string arrayApp[5] = { "Martin", "Gayoso", "Fiterman", "Picolomini", "Salvi" };
 		string arrayId[5] = { "7428", "9732", "2693", "1426", "97639" };
 		int posN = rand() % (4 - 0);
 		int posA = rand() % (4 - 0);
 		int id = rand() % (4 - 0);
+
+		Alergias  Aler=switch1(k);
+		Miembros Miemb;
+		Miemb = switch2(randMiembro);
 		cFechass* fechaN = crearFechas();
-		cPacientes *paciente = new cPacientes(arrayId[id], arrayName[posN], arrayApp[posA],*prot, switch1(randAlergia), switch2(randMiembro), *fechaN);
+		cPacientes *paciente = new cPacientes(arrayId[id], arrayName[posN], arrayApp[posA],*prot,Aler ,Miemb , *fechaN);
+		string arrayTEL[5] = { "748438728", "970493432", "269849393", "1494483926", "99437639" };
+		int TEL = rand() % (4 - 0);
+		paciente->set_Tel(arrayTEL[TEL]);
 		return paciente;
 	
 	

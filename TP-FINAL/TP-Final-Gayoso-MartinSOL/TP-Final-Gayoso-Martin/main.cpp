@@ -7,9 +7,10 @@ using namespace std;
 
 int main()
 {
+	cout << "AL MOMENTO DE IMPRIMIR 1=TRUE 0=FALSE"<<endl;
 	cANPA* ANPA = new cANPA();
 
-	//Creo hospitales y ortopedias y los agrego a las listas del ANPA
+	cout << "Creo hospitales y ortopedias y los agrego a las listas del ANPA";
 	cHospital* Hospital1 = new cHospital("Favaloro", "Av. Belgrano 1746");
 	cHospital* Hospital2 = new cHospital("Italiano", "Potosi 4060");
 	cHospital* Hospital3 = new cHospital("Aleman", "Av. Pueyrredón 1640");
@@ -26,13 +27,13 @@ int main()
 	ANPA->Agregar_Ortopedias(*Ortopedia2);
 	ANPA->Agregar_Ortopedias(*Ortopedia3);
 
-	//creo fabricantes
+	cout << "creo fabricantes" << endl;
 	cFabricante* Fabricante1 = new cFabricante("Juan", "Colombres 800");
 	cFabricante* Fabricante2 = new cFabricante("Salvador", "Av. Entre rios 3458");
 	cFabricante* Fabricante3 = new cFabricante("Alberto", "Av. las heras 3508");
 	Fabricante1->set_Nro_Hab(999078);
 
-	//creo protesis y las agrego a las lista de protesis y de stock de cada ortopedia
+	cout << "creo protesis y las agrego a las lista de protesis y de stock de cada ortopedia" << endl;
 	cProtesis* protesis1 = new cQuirurgicas(*Fabricante3, cFechass(12, 8, 2022), cFechass(20, 8, 2022));
 	cQuirurgicas* CQ1 = dynamic_cast<cQuirurgicas*>(protesis1);
 	CQ1->set_Der_Izq(true);
@@ -83,10 +84,10 @@ int main()
 	Ortopedia1->agregar_Stock(*protesis3);
 	Ortopedia1->agregar_Stock(*protesis3);
 
-	//elimino protesis
+	cout << "elimino protesis" << endl;
 	*Ortopedia1 - *protesis3;
 
-	//creo medicos y pacientes y los agrego a las listas del Hospital 
+	cout << "creo medicos y pacientes y los agrego a las listas del Hospital" << endl;
 	cMedicos* medico1 = crearMedicos();
 	cMedicos* medico2 = crearMedicos();
 	cMedicos* medico3 = crearMedicos();
@@ -98,19 +99,31 @@ int main()
 	*Hospital2 + *medico3;
 	*Hospital3 + *medico4;
 	*Hospital3 + *medico5;
-
+	
 	cPacientes* paciente1 = crearPacientes(protesis1);
 	cPacientes* paciente2 = crearPacientes(protesis3);
 	cPacientes* paciente3 = crearPacientes(protesis5);
 	cPacientes* paciente4 = crearPacientes(protesis2);
 	cPacientes* paciente5 = crearPacientes(protesis4);
+	
+	cout << "try catch" << endl;
+	
 	try
 	{
 		*Hospital1 + *paciente5;
+		paciente5->set_Hosp(Hospital1->get_Nombre());
+
 		*Hospital2 + *paciente1;
+		paciente1->set_Hosp(Hospital2->get_Nombre());
+
 		*Hospital2 + *paciente3;
+		paciente3->set_Hosp(Hospital2->get_Nombre());
+
 		*Hospital3 + *paciente4;
+		paciente4->set_Hosp(Hospital3->get_Nombre());
+
 		*Hospital3 + *paciente2;
+		paciente2->set_Hosp(Hospital3->get_Nombre());
 
 	}
 	catch (const std::exception & e)
@@ -119,11 +132,11 @@ int main()
 	}
 
 
-	//Asignar Protesis
+	cout << "Asignar Protesis" << endl;
 	unsigned int knum= rand() % (4 - 1);
 	medico1->AsignarProtesis(*paciente5,knum);
 	
-	//Paciente va al amapa a buscar su protesis	
+	cout << "Paciente va al amapa a buscar su protesis" << endl;
 		try
 		{
 			ANPA->BuscarPorOrtopedia(*paciente5);
@@ -134,22 +147,9 @@ int main()
 
 		}
 
-	//Creo Registro
-	cRegistro* Registro=new cRegistro(*Hospital1,*medico1,protesis4,*paciente5,cFechass(0,0,0),cFechass(0,0,0));
-	//Le ponemos valores en el constructor porque despues en Guardar registro se van a guardar los valore"reales"
-	ANPA->Agregar_Registro(*Registro);
-	try
-	{
-		ANPA->Guardar_en_Registro();
-	}
-	catch (const std::exception&e)
-	{
-		cout << "Error: " << e.what() << endl;
-	}
 
 	//FUNCIONES PARA IMPRIMIR
 	medico1->ImprimirM();
-	Registro->imprimirR();
 	ANPA->Imprimir_Hospitales();
 	ANPA->Imprimir_Ortopedias();
 	Fabricante1->Imprimir();
@@ -159,6 +159,26 @@ int main()
 	Ortopedia1->Imprimir_Prot();
 	Ortopedia1->Imprimir_Prot_Stock();
 	CQ1->imprimirP();
+
+
+	cout << "Creo Registro" << endl;
+
+	//No se crea bien el constructor del registro, salta una excepcion que no pudimos entender pero si sacamos lo de el registro el programa corre
+
+	cRegistro* Registro = new cRegistro(*Hospital1, *medico1, protesis4, *paciente5, cFechass(0, 0, 0), cFechass(0, 0, 0));
+	//Le ponemos valores en el constructor porque despues en Guardar registro se van a guardar los valore"reales"
+
+	ANPA->Agregar_Registro(*Registro);
+	try
+	{
+		ANPA->Guardar_en_Registro();
+	}
+	catch (const std::exception& e)
+	{
+		cout << "Error: " << e.what() << endl;
+	}
+
+	Registro->imprimirR();
 
 	delete Hospital1;
 	delete Hospital2;

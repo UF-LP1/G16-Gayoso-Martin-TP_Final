@@ -21,15 +21,13 @@ public:
 	cPacientes &operator=(const cPacientes& acopiar);
 	friend ostream& operator<<(ostream& out, const cPacientes& _Pac);
 
-	/*cFechass get_FechaNac();
-	string get_Tel();
-	string get_Nombre_Hosp();*/
+
 	float  get_Radio_Amput();//USADA
 	cProtesis* get_Prot_Nec();//USADA
 	Alergias get_Alergias();//USADA
-	//Miembros get_Miembro();
+	string get_Tel();//USADA
 	string get_Mat();//USADA
-	
+	string get_Hosp();
 	void CrearPac(string T,string NH,float RA);
 
 	void set_Tel(string _Tel);//USADA
@@ -39,6 +37,7 @@ public:
 	void set_Alergias(Alergias ale);//USADA
 	void set_Miembro(Miembros M);//USADA
 	void set_MatriculaMed(string Mat);//Usada
+	void set_Hosp(string h);
 	
 	
 	string to_stringpac() const;//USADA

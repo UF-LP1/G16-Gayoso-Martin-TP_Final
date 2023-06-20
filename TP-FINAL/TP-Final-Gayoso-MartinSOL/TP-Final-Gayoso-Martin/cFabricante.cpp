@@ -42,7 +42,7 @@ void cFabricante::set_Sol(bool& sol)
 string cFabricante::to_string()
 {
 	stringstream salida;
-	salida << "Nombre del Fabricante: " << this->Nombre << "Direccion del Fabricante: " << this->Direc << "El Nro del Habilitacion del fabricante es: " << this->Nro_Habilitacion << "El estado de la solicitud es: " << this->Solicitud;
+	salida << "Nombre del Fabricante: " << this->Nombre << " ,Direccion del Fabricante: " << this->Direc << " ,El Nro del Habilitacion del fabricante es: " << this->Nro_Habilitacion << " ,El estado de la solicitud es: " << this->Solicitud<<endl;
 	return salida.str();
 }
 

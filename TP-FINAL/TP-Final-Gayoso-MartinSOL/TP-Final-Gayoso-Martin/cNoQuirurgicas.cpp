@@ -70,19 +70,16 @@ bool cNoQuirurgicas::operator==(const cNoQuirurgicas& cNQ)
 ostream& operator<<(ostream& out, cNoQuirurgicas& NQ)
 {
 	out << NQ.to_stringP();
-	/*out << NQ.Ancho << NQ.Largo << NQ.Radio;
-	cProtesis* aux = &NQ;
-	out << *aux;*/
 	return out;
 }
 
 string cNoQuirurgicas::to_stringP()
 {
 	stringstream salida;
-	salida << "Fecha de Fabricacion: " << this->Fecha_Fabric.to_stringF() << "Fabricante: " << this->Fabricante.to_string()
-		<< "Fecha de Solicitud" << this->Fecha_solicitada.to_stringF()
-		<< "Ancho: " << this->Ancho << "Largo: " << this->Largo << "Superior o inferior: " << this->Sup_Inf
-		<< "Radio: " << this->Radio << "Derecho o Izquierdo: " << this->Der_Izq;
+	salida << " Fecha de Fabricacion: " << this->Fecha_Fabric.to_stringF() << " ,Fabricante: " << this->Fabricante.to_string()
+		<< " ,Fecha de Solicitud" << this->Fecha_solicitada.to_stringF()
+		<< " ,Ancho: " << this->Ancho << " ,Largo: " << this->Largo << " ,Superior o inferior: " << this->Sup_Inf
+		<< " ,Radio: " << this->Radio << " ,Derecho o Izquierdo, imprime bool: " << this->Der_Izq<<endl;
 		return salida.str();
 }
 

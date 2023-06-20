@@ -1,6 +1,6 @@
 #include "cRegistro.h"
 
-cRegistro::cRegistro(cHospital hosp, cMedicos medic, cProtesis* prot, cPacientes paciente, cFechass fecha_e, cFechass fecha_s) :Hospital(hosp), Medico(medic), P_Ort(prot),Paciente(paciente), Fecha_Entrega(fecha_e), Fecha_Sol(fecha_s)
+cRegistro::cRegistro(cHospital hosp, cMedicos medic, cProtesis *prot, cPacientes paciente, cFechass fecha_e, cFechass fecha_s) :Hospital(hosp), Medico(medic), P_Ort(prot),Paciente(paciente), Fecha_Entrega(fecha_e), Fecha_Sol(fecha_s)
 {
 	this->Fecha_EstE = 0;
 }
@@ -24,9 +24,9 @@ void cRegistro::setPac(cPacientes pacs)
 	this->Paciente = pacs;
 }
 
-void cRegistro::setProt(cProtesis* prot)
+void cRegistro::setProt(cProtesis *prot)
 {
-	this->P_Ort = prot;
+	this->P_Ort = prot; 
 }
 
 void cRegistro::setFechaS(cFechass FS)
@@ -89,13 +89,13 @@ cHospital cRegistro::get_hosp()
 string cRegistro::to_stringR() const
 {
     stringstream salida;
-    salida << "Fecha de Entrega:" << this->Fecha_Entrega.to_stringF()
-        << "Cantidad de dias estimados para la entrega:" << this->Fecha_EstE
-        << "Fecha de Solicitud de l Protesis: " << this->Fecha_Sol.to_stringF()
-        << "Hospital: " << this->Hospital.to_stringH()
-        << "Medico: " << this->Medico.to_stringM()
-        << "Paciente: " << this->Paciente.to_stringpac()
-        << "Pieza Ortopedica:" << this->P_Ort->to_stringP();
+    salida << " ,Fecha de Entrega:" << this->Fecha_Entrega.to_stringF()
+        << " ,Cantidad de dias estimados para la entrega:" << this->Fecha_EstE
+        << " ,Fecha de Solicitud de l Protesis: " << this->Fecha_Sol.to_stringF()
+        << " ,Hospital: " << this->Hospital.to_stringH()
+        << " ,Medico: " << this->Medico.to_stringM()
+        << " ,Paciente: " << this->Paciente.to_stringpac()
+        << " ,Pieza Ortopedica:" << this->P_Ort->to_stringP()<<endl;
     
     return salida.str();
     return string();

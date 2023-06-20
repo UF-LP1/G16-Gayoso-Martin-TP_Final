@@ -10,9 +10,9 @@ public:
 	cPersonas(string id,string Nom, string app);
 	~cPersonas();
 
-	//string get_ID();
+	
 	string get_nombre();
-	//string get_apellido();
+	
 
 
 protected:

@@ -60,9 +60,9 @@
 	string cProtesis::to_stringP()
 	{
 		stringstream salida;
-		salida << "Fecha de Fabricacion: " << this->Fecha_Fabric.to_stringF() << "Fabricante: " << this->Fabricante.to_string()
-			<< "Fecha de Solicitud" << this->Fecha_solicitada.to_stringF()
-		 << "Derecho o Izquierdo: " << this->Der_Izq;
+		salida << "Fecha de Fabricacion: " << this->Fecha_Fabric.to_stringF() << " ,Fabricante: " << this->Fabricante.to_string()
+			<< " ,Fecha de Solicitud" << this->Fecha_solicitada.to_stringF()
+		 << " ,Derecho o Izquierdo: " << this->Der_Izq;
 		return salida.str();
 	}
 
@@ -83,7 +83,9 @@
 
 	}
 
-	ostream& operator<<(ostream& out, cProtesis& prot)
+	
+
+	ostream& operator<<(ostream& out,  cProtesis& prot)
 	{
 		out << prot.to_stringP();
 		return out;

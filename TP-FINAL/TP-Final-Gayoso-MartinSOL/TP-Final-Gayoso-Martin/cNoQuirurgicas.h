@@ -28,10 +28,3 @@ protected:
 };
 
 #endif
-//bool operator==(const cNoQuirurgicas& cNQ, const cNoQuirurgicas& otrocNQ)
-//{
-//	if (otrocNQ.get_Der_Izq() == cNQ.get_Der_Izq() && otrocNQ.get_Sup_Inf() == cNQ.get_Sup_Inf() && otrocNQ.get_Radio() == cNQ.get_Radio() && otrocNQ.get_Largo() == cNQ.get_Largo() && otrocNQ.get_Ancho() == cNQ.get_Ancho())
-//		return true;
-//	else
-//		return false;
-//}

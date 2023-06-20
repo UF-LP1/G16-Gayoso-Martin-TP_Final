@@ -54,20 +54,16 @@ void cQuirurgicas::Agregar_Mat(vector<string> Mats)
 ostream& operator<<(ostream& out, cQuirurgicas& CQ)
 {
 	out << CQ.to_stringP();
-	//out << CQ.Material;
-	//cProtesis* aux = &CQ;
-	//out << *aux;
-	//
 	return out;
 }
 string cQuirurgicas::to_stringP()
 {
 	stringstream salida;
-	salida << "Fecha de Fabricacion: " << this->Fecha_Fabric.to_stringF() << "Fabricante: " << this->Fabricante.to_string()
-		<< "Fecha de Solicitud" << this->Fecha_solicitada.to_stringF()
-		<< "Superior o inferior: " << this->Sup_Inf
-		<< "Derecho o Izquierdo: " << this->Der_Izq
-		<< "Material: " << this->Material;
+	salida << " ,Fecha de Fabricacion: " << this->Fecha_Fabric.to_stringF() << " ,Fabricante: " << this->Fabricante.to_string()
+		<< " ,Fecha de Solicitud" << this->Fecha_solicitada.to_stringF()
+		<< " ,Superior o inferior: " << this->Sup_Inf
+		<< " ,Derecho o Izquierdo: " << this->Der_Izq
+		<< " ,Material: " << this->Material<<endl;
 	return salida.str();
 }
 

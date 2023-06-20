@@ -15,7 +15,7 @@ public:
 
 	void Agregar_Pac(cPacientes NewPac);//USADOS EN SOBRECARGA
 	void Agregar_Med(cMedicos NewMed);//USADOS EN SOBRECARGA
-	//string to_string();
+	
 
 	void Imprimir_Pac();//USADA
 	void Imprimir_Med();
@@ -24,7 +24,7 @@ public:
 	cMedicos BuscarPorMat();//USADA
 	
 	cHospital& operator=(const cHospital &acopiar);
-	//bool operator==(cHospital& hosp);
+	
 
 	string to_stringH()const ;//USADA
 	void ImprimirH();//USADA
@@ -39,15 +39,5 @@ protected:
 };
 
 #endif
-//ostream& operator<<(ostream& out, cMedicos& med)
-//{
-//	out << med.to_stringM();
-//
-//	return out;
-//}
-//ostream& operator<<(ostream& out, cPacientes& _Pac)
-//{
-//	out << _Pac.to_stringpac();
-//	return out;
-//}
+
 
