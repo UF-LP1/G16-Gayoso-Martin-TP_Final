@@ -1,9 +1,11 @@
 #pragma once
+#ifndef _CANPA_H
+#define _CANPA_H
+
 #include <string>
 #include <list>
 #include "cOrtopedia.h"
 #include "cRegistro.h"
-
 
 class cANPA
 {
@@ -54,3 +56,5 @@ ostream& operator<<(ostream& out, cRegistro& reg)
 	out<<reg.to_stringR();
 	return out;
 }
+
+#endif

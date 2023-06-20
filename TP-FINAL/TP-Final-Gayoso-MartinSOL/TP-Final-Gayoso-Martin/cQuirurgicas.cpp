@@ -30,12 +30,17 @@ const string cQuirurgicas::getMat()const
 	return this->Material;
 }
 
-//bool cQuirurgicas::operator==( cQuirurgicas& cQ)
-//{
-//	
-//	return (this->Der_Izq == cQ.get_Der_Izq() && this->Sup_Inf == cQ.get_Sup_Inf() && this->Material == cQ.Material);
-//		
-//}
+bool cQuirurgicas::operator==( const cQuirurgicas& cQ)
+{
+	
+	if (this->Der_Izq == cQ.get_Der_Izq() && this->Sup_Inf == cQ.get_Sup_Inf() && this->Material == cQ.Material)
+	{
+		return true;
+	}
+	else
+		return false;
+		
+}
 
 void cQuirurgicas::Agregar_Mat(vector<string> Mats)
 {
@@ -48,10 +53,11 @@ void cQuirurgicas::Agregar_Mat(vector<string> Mats)
 
 ostream& operator<<(ostream& out, cQuirurgicas& CQ)
 {
-	out << CQ.Material;
-	cProtesis* aux = &CQ;
-	out << *aux;
-	
+	out << CQ.to_stringP();
+	//out << CQ.Material;
+	//cProtesis* aux = &CQ;
+	//out << *aux;
+	//
 	return out;
 }
 string cQuirurgicas::to_stringP()

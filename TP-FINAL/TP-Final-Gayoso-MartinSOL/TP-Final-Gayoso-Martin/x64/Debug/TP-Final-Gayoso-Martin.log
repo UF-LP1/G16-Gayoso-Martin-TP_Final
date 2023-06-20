@@ -1,48 +1,12 @@
 ﻿  cANPA.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.cpp(63,41): warning C4101: 'e': variable local sin referencia
-  cHospital.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.cpp(68,30): warning C4101: 'e': variable local sin referencia
-  cMedicos.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cMedicos.cpp(23,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cANPA.cpp(63,42): warning C4101: 'e': variable local sin referencia
   cOrtopedia.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,1): error C2678: '==' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'const _Ty' (o bien no existe una conversión aceptable)
-          with
-          [
-              _Ty=cProtesis
-          ]
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cProtesis.h(48,6): message : puede ser 'bool operator ==(cProtesis &,cProtesis &)' [se encontró con la búsqueda dependiente de argumentos]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586,1): message : al hacer coincidir la lista de argumentos '(const _Ty, const _Ty)'
-          with
-          [
-              _Ty=cProtesis
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1585): message : al compilar la función del miembro clase plantilla "auto std::list<cProtesis,std::allocator<cProtesis>>::remove(const _Ty &)"
-          with
-          [
-              _Ty=cProtesis
-          ]
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.h(27): message : Vea la referencia a la creación de una instancia de clase plantilla "std::list<cProtesis,std::allocator<cProtesis>>" que se está compilando
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1597,1): error C2451: una expresión condicional de tipo "void" no es válida
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1597,22): message : Las expresiones de tipo void no se pueden convertir en otros tipos
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1586): message : Vea la referencia a la creación de una instancia de la función plantilla "auto std::list<cProtesis,std::allocator<cProtesis>>::remove_if<std::list<cProtesis,std::allocator<cProtesis>>::remove::<lambda_a30b751dddf1337e792daf429d6d69e4>>(_Pr1)" que se está compilando
-          with
-          [
-              _Pr1=std::list<cProtesis,std::allocator<cProtesis>>::remove::<lambda_a30b751dddf1337e792daf429d6d69e4>
-          ]
   cRegistro.cpp
-  Funciones.cpp
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(20,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(21,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(25,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(26,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(30,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(31,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(35,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\Funciones.cpp(36,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   main.cpp
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(48,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(49,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(55,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(56,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\main.cpp(87,14): error C2676: '-' binario: 'cOrtopedia' no define este operador o una conversión a un tipo aceptable para el operador predefinido
   Generando código...
-C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cHospital.cpp(96): warning C4715: 'cHospital::BuscarPorMat': no todas las rutas de acceso de control devuelven un valor
+C:\Users\micau\Documents\Valen\1er Cuatri 2023\LP1\CarpetaParaTpFinal\TP-FINAL\TP-Final-Gayoso-MartinSOL\TP-Final-Gayoso-Martin\cOrtopedia.cpp(43): warning C4715: 'cOrtopedia::Buscar_Prot': no todas las rutas de acceso de control devuelven un valor

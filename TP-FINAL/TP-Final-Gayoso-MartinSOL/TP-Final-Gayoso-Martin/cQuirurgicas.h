@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _CQUIRURGICAS_H
+#define _CQUIRURGICAS_H
 #include "cProtesis.h"
 #include <vector>
 class cQuirurgicas: public cProtesis
@@ -17,16 +19,18 @@ public:
 	friend ostream& operator<<(ostream& out, cQuirurgicas& CQ);
 	string to_stringP();//USADA
 	void imprimirP();//USADAS
+	bool operator==(const cQuirurgicas& cQ);
 protected:
 	string Material;
 	
 };
+#endif
 
 
-bool operator==(const cQuirurgicas& cQ, const cQuirurgicas& otrocQ)
-{
-	if (otrocQ.get_Der_Izq() == cQ.get_Der_Izq() && otrocQ.get_Sup_Inf() == cQ.get_Sup_Inf() && otrocQ.getMat() == cQ.getMat())
-		return true;
-	else
-		return false;
-}
+//bool operator==(const cQuirurgicas& cQ, const cQuirurgicas& otrocQ)
+//{
+//	if (otrocQ.get_Der_Izq() == cQ.get_Der_Izq() && otrocQ.get_Sup_Inf() == cQ.get_Sup_Inf() && otrocQ.getMat() == cQ.getMat())
+//		return true;
+//	else
+//		return false;
+//}

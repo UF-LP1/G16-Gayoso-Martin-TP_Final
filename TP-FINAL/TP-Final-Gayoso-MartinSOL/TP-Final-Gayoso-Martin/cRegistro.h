@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _CREGISTRO_H 
+#define _CREGISTRO_H
 #include <string>
 #include <ctime>
 #include "cHospital.h"
@@ -39,3 +41,5 @@ protected:
 	cFechass Fecha_Entrega;
 
 };
+
+#endif 

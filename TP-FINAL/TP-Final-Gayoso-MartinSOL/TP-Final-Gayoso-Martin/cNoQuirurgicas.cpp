@@ -52,11 +52,15 @@ const float cNoQuirurgicas::get_Largo()const
 	return this->Largo;
 }
 
-//bool cNoQuirurgicas::operator==( cNoQuirurgicas& cNQ)
-//{
-//	return (this->Der_Izq == cNQ.get_Der_Izq() && this->Sup_Inf == cNQ.get_Sup_Inf() && this->Radio == cNQ.Radio && this->Largo == cNQ.Largo && this->Ancho == cNQ.Ancho);
-//					
-//}
+bool cNoQuirurgicas::operator==(const cNoQuirurgicas& cNQ)
+{
+	if (this->Der_Izq == cNQ.get_Der_Izq() && this->Sup_Inf == cNQ.get_Sup_Inf() && this->Radio == cNQ.Radio && this->Largo == cNQ.Largo && this->Ancho == cNQ.Ancho)
+	{
+		return true;
+	}
+	else
+		return false;
+}
 
 
 
@@ -65,10 +69,10 @@ const float cNoQuirurgicas::get_Largo()const
 
 ostream& operator<<(ostream& out, cNoQuirurgicas& NQ)
 {
-	//out<<NQ.to_stringP
-	out << NQ.Ancho << NQ.Largo << NQ.Radio;
+	out << NQ.to_stringP();
+	/*out << NQ.Ancho << NQ.Largo << NQ.Radio;
 	cProtesis* aux = &NQ;
-	out << *aux;
+	out << *aux;*/
 	return out;
 }
 

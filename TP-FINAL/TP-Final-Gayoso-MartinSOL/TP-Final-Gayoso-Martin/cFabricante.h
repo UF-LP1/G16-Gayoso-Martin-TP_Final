@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _CFABRICANTE_H
+#define _CFABRICANTE_H
 #include "cEstablecimiento.h"
 #include <sstream>
 class cFabricante : public cEstablecimiento
@@ -22,3 +24,4 @@ protected:
 
 
 };
+#endif

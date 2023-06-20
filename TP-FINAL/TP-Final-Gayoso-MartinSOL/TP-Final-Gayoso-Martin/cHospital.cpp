@@ -65,7 +65,7 @@ void cHospital::operator+(cPacientes& pac)
 	{
 		this->Agregar_Pac(pac);
 	}
-	catch (const std::exception&e)
+	catch (const std::exception& e)
 	{
 		throw NoAgregado();
 	}

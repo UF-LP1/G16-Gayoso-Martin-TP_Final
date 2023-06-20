@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _CFECHASS_H
+#define _CFECHASS_H 
 #include <sstream>
 #include <iostream>
 #include <string>
@@ -30,3 +32,4 @@ public:
 	//cFechass& operator=(const cFechass& otro);
 };
 
+#endif

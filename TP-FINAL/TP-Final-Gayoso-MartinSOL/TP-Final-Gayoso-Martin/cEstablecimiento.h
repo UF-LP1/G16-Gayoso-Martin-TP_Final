@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _ESTABLECIMIENTO_H
+#define _ESTABLECIMIENTO_H
 #include <string>
 #include<iostream>
 using namespace std;
@@ -22,3 +24,4 @@ protected:
 
 };
 
+#endif

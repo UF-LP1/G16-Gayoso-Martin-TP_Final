@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _CPACIENTES_H
+#define _CPACIENTES_H
 #include<list>
 #include "cProtesis.h"
 #include "cPersonas.h"
@@ -56,4 +58,6 @@ protected:
 	string MatriculadelMed;
 	
 }; 
+
+#endif
 

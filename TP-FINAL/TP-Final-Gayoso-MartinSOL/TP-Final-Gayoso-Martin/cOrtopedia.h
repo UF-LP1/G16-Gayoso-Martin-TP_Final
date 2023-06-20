@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _CORTOPEDIA_H
+#define _CORTOPEDIA_H
 #include "cEstablecimiento.h"
 #include <list>
 #include "cPacientes.h"
@@ -21,7 +23,7 @@ public:
 	
 
 
-	 void operator-(cProtesis& prot);//USADA
+ void operator-(cProtesis& prot);//USADA
 
 protected:
 	list <cProtesis> Lista_Protesis;  
@@ -29,6 +31,7 @@ protected:
 
 
 };
+#endif
 //ostream& operator<<(ostream& out, cProtesis& _Prot)
 //{
 //	//out<<_Prot.to_stringP();

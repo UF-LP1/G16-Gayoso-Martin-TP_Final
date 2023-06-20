@@ -14,3 +14,4 @@ class NotFound :public exception
 public:
 	const char* what() const throw();
 };
+

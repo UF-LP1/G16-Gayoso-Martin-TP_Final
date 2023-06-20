@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _CNOQUIRURGICAS_H
+#define _CNOQUIRURGICAS_H
 #include "cProtesis.h"
 class cNoQuirurgicas: public cProtesis
 {
@@ -18,17 +20,18 @@ public:
 	friend ostream& operator<<(ostream& out, cNoQuirurgicas& NQ);
 	string to_stringP();//USADO
 	void imprimirP();//USADO
+	 bool operator==(const cNoQuirurgicas& cNQ);
 protected:
 	float Radio;
 	float Largo;
 	float Ancho;
 };
 
-
-bool operator==(const cNoQuirurgicas& cNQ, const cNoQuirurgicas& otrocNQ)
-{
-	if (otrocNQ.get_Der_Izq() == cNQ.get_Der_Izq() && otrocNQ.get_Sup_Inf() == cNQ.get_Sup_Inf() && otrocNQ.get_Radio() == cNQ.get_Radio() && otrocNQ.get_Largo() == cNQ.get_Largo() && otrocNQ.get_Ancho() == cNQ.get_Ancho())
-		return true;
-	else
-		return false;
-}
+#endif
+//bool operator==(const cNoQuirurgicas& cNQ, const cNoQuirurgicas& otrocNQ)
+//{
+//	if (otrocNQ.get_Der_Izq() == cNQ.get_Der_Izq() && otrocNQ.get_Sup_Inf() == cNQ.get_Sup_Inf() && otrocNQ.get_Radio() == cNQ.get_Radio() && otrocNQ.get_Largo() == cNQ.get_Largo() && otrocNQ.get_Ancho() == cNQ.get_Ancho())
+//		return true;
+//	else
+//		return false;
+//}

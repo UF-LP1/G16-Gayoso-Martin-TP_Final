@@ -80,7 +80,16 @@ void cOrtopedia::agregar_Stock(cProtesis& _Protesis)
 
 void cOrtopedia::quitar_Protesis_delStock(cProtesis &_Protesis)
 {
-	Lista_Stock.remove(_Protesis);
+	list<cProtesis>::iterator it = Lista_Stock.begin();
+	
+	for(it; it != Lista_Stock.end(); it++)
+	{
+		if (*it == _Protesis)
+		{
+			 Lista_Protesis.erase(it);
+		}
+		
+	}
 }
 
 void cOrtopedia::operator-(cProtesis& prot)

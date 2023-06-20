@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _CPERSONAS_H
+#define _CPERSONAS_H
 #include <string>
 using namespace std;
 
@@ -18,3 +20,5 @@ protected:
 	const string nombre;
 	const string apellido;
 };
+
+#endif

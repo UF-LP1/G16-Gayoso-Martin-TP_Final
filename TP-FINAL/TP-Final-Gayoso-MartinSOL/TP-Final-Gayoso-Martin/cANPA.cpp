@@ -60,7 +60,7 @@ void cANPA::Guardar_en_Registro()
                 itr->setFechaS(this->buscar_Hosp(*ith).get_Prot_Nec()->get_FechaSol());
                 itr->generarFechaE();
             }
-            catch (const std::exception&e)
+            catch (const std::exception& e)
             {
                 throw NotFound();
 

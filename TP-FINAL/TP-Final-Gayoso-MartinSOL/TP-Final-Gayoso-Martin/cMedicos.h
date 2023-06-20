@@ -1,5 +1,6 @@
 #pragma once
-
+#ifndef _CMEDICOS_H
+#define _CMEDICOS_H
 #include "cPersonas.h" 
 #include "cPacientes.h"
 #include <ctime>
@@ -26,4 +27,6 @@ protected:
 	string Matricula;
 	
 };
+
+#endif
 

@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _CHOSPITAL_H
+#define _CHOSPITAL_H
 #include "cEstablecimiento.h"
 #include <list>
 #include "cPacientes.h"      
@@ -32,15 +34,16 @@ protected:
 
 };
 
+#endif
+ostream& operator<<(ostream& out, cMedicos& med)
+{
+	out << med.to_stringM();
+
+	return out;
+}
 ostream& operator<<(ostream& out, cPacientes& _Pac)
 {
 	out << _Pac.to_stringpac();
 	return out;
 }
 
-ostream& operator<<(ostream& out, cMedicos& med)
-{
-	out<<med.to_stringM();
-	
-	return out;
-}  
