@@ -138,8 +138,8 @@ cPacientes* crearPacientes(cProtesis *prot)
 		int posN = rand() % (4 - 0);
 		int posA = rand() % (4 - 0);
 		int id = rand() % (4 - 0);
-
-		cPacientes *paciente = new cPacientes(arrayId[id], arrayName[posN], arrayApp[posA],*prot, switch1(randAlergia), switch2(randMiembro), crearFechas);
+		cFechass* fechaN = crearFechas();
+		cPacientes *paciente = new cPacientes(arrayId[id], arrayName[posN], arrayApp[posA],*prot, switch1(randAlergia), switch2(randMiembro), *fechaN);
 		return paciente;
 	
 	
